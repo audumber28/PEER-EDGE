@@ -176,7 +176,6 @@ export default function HomePage() {
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Everything you need for your educational and career journey.
                 </p>
-
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
@@ -258,7 +257,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
+              <Card className="hover:bg-emerald-300/10 hover:text-emerald-500 transition-all duration-300 delay-200">
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
@@ -283,7 +282,7 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-300/10 hover:text-emerald-500 transition-all duration-300 delay-200">
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
@@ -308,7 +307,7 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-300/10 hover:text-emerald-500 transition-all duration-300 delay-200">
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
                     <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
@@ -384,14 +383,14 @@ export default function HomePage() {
                     <CheckCircle className="h-5 w-5 text-primary" />
                     <div className="font-medium">Satisfaction guarantee</div>
                   </div>
-
                 </div>
                 <div className="rounded-lg bg-muted p-4">
                   <div className="flex items-center gap-4">
                     <div className="text-sm text-muted-foreground">
-                      "Peer<span className="text-emerald-500">Edge</span> connected me with someone who understood
-                      exactly what I was going through. It made all the
-                      difference in my application journey."
+                      "Peer<span className="text-emerald-500">Edge</span>{" "}
+                      connected me with someone who understood exactly what I
+                      was going through. It made all the difference in my
+                      application journey."
                     </div>
                   </div>
                 </div>
@@ -401,11 +400,12 @@ export default function HomePage() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted bg-gradient-to-r from-emerald-500/25 to-transparent">
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Stay updated with Peer<span className="text-emerald-500">Edge</span>
+                Stay updated with Peer
+                <span className="text-emerald-500">Edge</span>
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Get the latest news, updates, and resources delivered to your
