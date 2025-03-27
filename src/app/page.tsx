@@ -5,7 +5,7 @@ import InternationalAdmissions from "@/app/intmentorsinput/page";
 export default function HomePage() {
   return (
     <>
-      <InternationalAdmissions></InternationalAdmissions>
+      {/* <InternationalAdmissions></InternationalAdmissions> */}
       <HomePageComponent />
       <SignInButton mode="redirect" forceRedirectUrl="/Home">
         <button className="btn btn-primary">Sign In</button>
