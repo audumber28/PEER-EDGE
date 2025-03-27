@@ -6,7 +6,7 @@ export default function HomePage() {
    
     <>
       <HomePageComponent />
-      <SignInButton mode="redirect" redirectUrl="/Home">
+      <SignInButton mode="redirect" forceRedirectUrl="/Home">
         <button className="btn btn-primary">Sign In</button>
       </SignInButton>
     </>

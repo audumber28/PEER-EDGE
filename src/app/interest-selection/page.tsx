@@ -18,43 +18,7 @@ import { Toaster, toast } from "sonner";
 
 // Organized interests by categories for better user experience
 const interestsList = [
-<<<<<<< HEAD
-  {
-    id: "web-dev",
-    name: "Web Development",
-    icon: "💻",
-    description: "Frontend, backend, and full-stack development",
-  },
-  {
-    id: "ml",
-    name: "Machine Learning",
-    icon: "🧠",
-    description: "AI, neural networks, and deep learning",
-  },
-  {
-    id: "security",
-    name: "Cybersecurity",
-    icon: "🔒",
-    description: "Network security, penetration testing, and compliance",
-  },
-  {
-    id: "cloud",
-    name: "Cloud Computing",
-    icon: "☁️",
-    description: "AWS, Azure, Google Cloud, and DevOps",
-  },
-  {
-    id: "blockchain",
-    name: "Blockchain",
-    icon: "🔗",
-    description: "Smart contracts, DApps, and crypto technologies",
-  },
-  {
-    id: "data",
-    name: "Data Science",
-    icon: "📊",
-    description: "Data analysis, visualization, and big data",
-=======
+
   // Core Development
   {
     category: "Core Development",
@@ -118,7 +82,7 @@ const interestsList = [
       { id: "interview-prep", name: "Interview Preparation", icon: "🎤", description: "Technical interview prep" },
       { id: "internship", name: "Internship Guidance", icon: "🎓", description: "Finding and securing internships" },
     ]
->>>>>>> origin/master
+
   },
 ];
 
@@ -127,13 +91,7 @@ export default function InterestSelectionPage() {
   const router = useRouter();
 
   const handleSelection = (interest: string) => {
-<<<<<<< HEAD
-    setSelectedInterests((prev) =>
-      prev.includes(interest)
-        ? prev.filter((i) => i !== interest)
-        : [...prev, interest]
-    );
-=======
+
     if (selectedInterests.includes(interest)) {
       setSelectedInterests(prev => prev.filter(i => i !== interest));
     } else if (selectedInterests.length < 5) {
@@ -143,7 +101,7 @@ export default function InterestSelectionPage() {
         description: "Please deselect an interest before adding a new one",
       });
     }
->>>>>>> origin/master
+
   };
 
   const handleSubmit = async () => {
@@ -167,14 +125,10 @@ export default function InterestSelectionPage() {
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center p-4">
-<<<<<<< HEAD
-      {/* Sonner Toaster component */}
-      <Toaster
-        theme="dark"
-=======
+
       <Toaster 
         theme="dark" 
->>>>>>> origin/master
+
         position="top-center"
         toastOptions={{
           style: {
@@ -189,13 +143,10 @@ export default function InterestSelectionPage() {
       <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-900/20 via-black to-black"></div>
       <div className="fixed top-20 right-20 w-72 h-72 rounded-full bg-green-900/10 blur-3xl"></div>
       <div className="fixed bottom-20 left-20 w-80 h-80 rounded-full bg-green-900/5 blur-3xl"></div>
-<<<<<<< HEAD
 
-      <Card className="w-full max-w-3xl bg-black/60 backdrop-blur-sm border-green-900/30 shadow-xl shadow-green-900/5 relative z-10">
-=======
       
       <Card className="w-full max-w-7xl bg-black/60 backdrop-blur-sm border-green-900/30 shadow-xl shadow-green-900/5 relative z-10">
->>>>>>> origin/master
+
         <CardHeader className="text-center pb-2">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -206,12 +157,9 @@ export default function InterestSelectionPage() {
               What Would You Like to Learn?
             </CardTitle>
             <CardDescription className="text-slate-400 mt-2">
-<<<<<<< HEAD
-              Choose the areas you're interested in to help us find the right
-              mentors for you
-=======
+
               Select up to 5 areas of interest to match with our expert mentors
->>>>>>> origin/master
+
             </CardDescription>
           </motion.div>
         </CardHeader>
@@ -222,63 +170,7 @@ export default function InterestSelectionPage() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-<<<<<<< HEAD
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {interestsList.map((interest, index) => (
-                <motion.div
-                  key={interest.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
-                >
-                  <Card
-                    className={`cursor-pointer border transition-all duration-300 ${
-                      selectedInterests.includes(interest.name)
-                        ? "bg-green-900/20 border-green-700/50"
-                        : "bg-gray-900/40 border-gray-800 hover:border-gray-700"
-                    }`}
-                    onClick={() => handleSelection(interest.name)}
-                  >
-                    <CardContent className="p-4 flex items-center gap-4">
-                      <div className="flex items-center gap-4">
-                        <Checkbox
-                          id={interest.id}
-                          checked={selectedInterests.includes(interest.name)}
-                          onCheckedChange={() => handleSelection(interest.name)}
-                          className="border-green-700 data-[state=checked]:bg-green-600 data-[state=checked]:text-white"
-                        />
-                        <div
-                          className={`w-10 h-10 rounded-full flex items-center justify-center bg-gradient-to-br ${
-                            selectedInterests.includes(interest.name)
-                              ? "from-green-900 to-green-700"
-                              : "from-gray-800 to-gray-700"
-                          }`}
-                        >
-                          <span className="text-xl">{interest.icon}</span>
-                        </div>
-                      </div>
-                      <div>
-                        <h3
-                          className={`font-medium transition-colors ${
-                            selectedInterests.includes(interest.name)
-                              ? "text-green-400"
-                              : "text-slate-200"
-                          }`}
-                        >
-                          {interest.name}
-                        </h3>
-                        <p className="text-xs text-slate-400 mt-1">
-                          {interest.description}
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-=======
+
             {interestsList.map((category, categoryIndex) => (
               <div key={category.category} className="mb-8 last:mb-0">
                 <h2 className="text-xl font-semibold text-green-400 mb-4">{category.category}</h2>
@@ -332,7 +224,7 @@ export default function InterestSelectionPage() {
                 </div>
               </div>
             ))}
->>>>>>> origin/master
+
           </motion.div>
         </CardContent>
 
@@ -353,13 +245,10 @@ export default function InterestSelectionPage() {
               </span>
             )}
           </div>
-<<<<<<< HEAD
 
-          <div className="flex justify-center">
-=======
           
           <div className="flex flex-col items-center gap-2">
->>>>>>> origin/master
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -371,21 +260,14 @@ export default function InterestSelectionPage() {
                 className="px-8 py-6 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white rounded-lg border-none"
                 variant="default"
               >
-<<<<<<< HEAD
-                Continue to Mentors
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-=======
+
                 Find My Mentors
                 <svg 
                   xmlns="http://www.w3.org/2000/svg" 
                   className="h-5 w-5 ml-2" 
                   fill="none" 
                   viewBox="0 0 24 24" 
->>>>>>> origin/master
+
                   stroke="currentColor"
                 >
                   <path
@@ -401,14 +283,8 @@ export default function InterestSelectionPage() {
               Selected {selectedInterests.length} of 5 maximum interests
             </p>
           </div>
-<<<<<<< HEAD
 
-          <p className="text-center text-xs text-slate-500 mt-4">
-            Selected {selectedInterests.length} of {interestsList.length}{" "}
-            interests
-          </p>
-=======
->>>>>>> origin/master
+
         </CardFooter>
       </Card>
     </div>
