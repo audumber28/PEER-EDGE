@@ -18,12 +18,12 @@ export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 border-b bg-emerald-500/7 backdrop-blur-sm">
-        <div className="container flex h-16 items-center justify-between py-4 px-10">
+        <div className="container flex h-16 items-center justify-between py-4 px-16">
           <div className="flex items-center gap-2">
-            <GraduationCap className="h-6 w-6" />
-            <span className="text-xl font-bold">
+            <GraduationCap className="h-9 w-9" />
+            <span className="text-2xl font-bold">
               Peer
-              <span className="text-xl font-bold text-emerald-500">Edge</span>
+              <span className="text-2xl font-bold text-emerald-500">Edge</span>
             </span>
           </div>
 
@@ -62,21 +62,27 @@ export default function HomePage() {
               <BookOpen className="h-4 w-4" />
               Course Insights
             </Link>
-            <Button
-              className={
-                "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
-              }
-            >
-              Sign Up
-            </Button>
+            <a href="/signin">
+              <Button
+                className={
+                  "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
+                }
+              >
+                Sign Up
+              </Button>
+            </a>
           </nav>
         </div>
       </header>
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-7xl mx-auto py-12 md:py-24 lg:py-32 xl:py-48">
-          <div className="container px-4 md:px-6">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
+          {/* Background Overlay */}
+          <div className="absolute inset-0 bg-[url('/Sprinkle.svg')] bg-cover bg-center bg-no-repeat opacity-50"></div>
+
+          {/* Content */}
+          <div className="w-7xl mx-auto relative container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
@@ -89,21 +95,13 @@ export default function HomePage() {
                     your college and career journey.
                   </p>
                 </div>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                  <Button size="lg" className="gap-1 bg-emerald-500">
-                    Find a Mentor <ArrowRight className="h-4 w-4" />
-                  </Button>
-                  <Button size="lg" variant="outline">
-                    Become a Mentor
-                  </Button>
-                </div>
               </div>
               <Image
-                src="/stock2.png"
-                width={550}
-                height={550}
+                src="/Learning-bro.svg"
+                width={450}
+                height={450}
                 alt="Students collaborating"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
+                className="mx-auto max-w-[200px] sm:max-w-[300px] lg:max-w-[900px] object-contain"
                 priority
                 quality={100}
               />
@@ -117,7 +115,11 @@ export default function HomePage() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  How MentorMatch Works
+                  How Peer
+                  <span className="text-3xl font-bold text-emerald-500 tracking-tighter sm:text-5xl mr-1.5">
+                    Edge
+                  </span>
+                  Works
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our platform connects you with mentors who have real
@@ -144,8 +146,8 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-bold">Schedule Sessions</h3>
                 <p className="text-muted-foreground">
-                  Book 1:1 video calls or message exchanges at times that work
-                  for you.
+                  Book <span className="">1:1</span> message exchanges at times
+                  that work for you.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 text-center">
@@ -177,9 +179,9 @@ export default function HomePage() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Users className="h-10 w-10 text-primary mb-2" />
+                  <Users className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">Verified Mentors</h3>
                   <p className="text-sm text-muted-foreground">
                     All mentors are verified students or alumni from the
@@ -187,9 +189,9 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Globe className="h-10 w-10 text-primary mb-2" />
+                  <Globe className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">International Support</h3>
                   <p className="text-sm text-muted-foreground">
                     Specialized guidance for international students navigating
@@ -197,9 +199,9 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <BookOpen className="h-10 w-10 text-primary mb-2" />
+                  <BookOpen className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">Course Reviews</h3>
                   <p className="text-sm text-muted-foreground">
                     Honest insights about courses and professors from students
@@ -207,9 +209,9 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <CheckCircle className="h-10 w-10 text-primary mb-2" />
+                  <CheckCircle className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">Application Review</h3>
                   <p className="text-sm text-muted-foreground">
                     Get feedback on your applications from successful
@@ -217,9 +219,9 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <Star className="h-10 w-10 text-primary mb-2" />
+                  <Star className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">Career Pathways</h3>
                   <p className="text-sm text-muted-foreground">
                     Explore different career paths with guidance from
@@ -227,9 +229,9 @@ export default function HomePage() {
                   </p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover:bg-emerald-500/10 transition duration-300 ease-in-out transform hover:scale-105">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-2">
-                  <GraduationCap className="h-10 w-10 text-primary mb-2" />
+                  <GraduationCap className="h-10 w-10 text-emerald-500 mb-2" />
                   <h3 className="text-xl font-bold">Resource Library</h3>
                   <p className="text-sm text-muted-foreground">
                     Access guides, templates, and resources for your educational
@@ -242,7 +244,7 @@ export default function HomePage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-emerald-500/25 to-transparent">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -258,7 +260,7 @@ export default function HomePage() {
               <Card>
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
-                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
                       J
                     </div>
                     <div>
@@ -283,7 +285,7 @@ export default function HomePage() {
               <Card>
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
-                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
                       M
                     </div>
                     <div>
@@ -308,7 +310,7 @@ export default function HomePage() {
               <Card>
                 <CardContent className="p-6 flex flex-col space-y-2">
                   <div className="flex items-center space-x-2">
-                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold">
+                    <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-primary-foreground font-bold border">
                       A
                     </div>
                     <div>
@@ -345,7 +347,7 @@ export default function HomePage() {
                   </h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                     Join thousands of students who've found guidance and success
-                    through MentorMatch.
+                    through Peer<span className="text-emerald-500">Edge</span>.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -385,7 +387,7 @@ export default function HomePage() {
                 <div className="rounded-lg bg-muted p-4">
                   <div className="flex items-center gap-4">
                     <div className="text-sm text-muted-foreground">
-                      "MentorMatch connected me with someone who understood
+                      "Peer<span className="text-emerald-500">Edge</span> connected me with someone who understood
                       exactly what I was going through. It made all the
                       difference in my application journey."
                     </div>
@@ -401,7 +403,7 @@ export default function HomePage() {
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Stay updated with MentorMatch
+                Stay updated with Peer<span className="text-emerald-500">Edge</span>
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Get the latest news, updates, and resources delivered to your
@@ -426,12 +428,17 @@ export default function HomePage() {
       </main>
 
       <footer className="border-t bg-background">
-        <div className="container flex flex-col gap-6 py-8 md:py-12">
+        <div className="container flex flex-col gap-6 py-8 md:py-12 max-w-7xl mx-auto">
           <div className="flex flex-col gap-6 md:flex-row md:gap-8 lg:gap-12">
             <div className="flex flex-col gap-3 md:w-1/3">
               <div className="flex items-center gap-2">
                 <GraduationCap className="h-6 w-6" />
-                <span className="text-xl font-bold">MentorMatch</span>
+                <span className="text-xl font-bold">
+                  Peer
+                  <span className="text-xl font-bold text-emerald-500">
+                    Edge
+                  </span>
+                </span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Connecting students with peer mentors for authentic guidance on

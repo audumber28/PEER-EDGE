@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import fontFamily from "tailwindcss/defaultTheme";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config = {
   darkMode: "class",
@@ -7,7 +7,7 @@ const config = {
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx,js,jsx,mdx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
@@ -21,7 +21,7 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        border: "1px solid #E5E7EB", /* This is gray-200 */
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -61,7 +61,7 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
@@ -79,7 +79,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
 } satisfies Config;
 
 export default config;
