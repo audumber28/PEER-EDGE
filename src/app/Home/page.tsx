@@ -539,7 +539,7 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} MentorMatch. All rights
+              &copy; {new Date().getFullYear()} Peer<span className="text-emerald-500">Edge</span>. All rights
               reserved.
             </p>
             <div className="flex gap-4">

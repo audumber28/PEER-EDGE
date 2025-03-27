@@ -339,7 +339,7 @@ const MentorProfile = () => {
                 <Separator className="bg-gray-700" />
 
                 {/* Expertise */}
-                <div>
+                {/* <div>
                   <h3 className="font-medium mb-3 text-gray-300">Areas of Expertise</h3>
                   <div className="flex flex-wrap gap-2">
                     {mentor.expertise.map((skill, idx) => (
@@ -352,7 +352,7 @@ const MentorProfile = () => {
                       </Badge>
                     ))}
                   </div>
-                </div>
+                </div> */}
 
                 <Separator className="bg-gray-700" />
 
