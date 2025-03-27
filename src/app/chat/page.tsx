@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Send, Image, X } from 'lucide-react';
+import { Send, Image, X, Link } from 'lucide-react';
+import { useRouter } from "next/navigation";
 
 const ChatMessenger = () => {
   const [messages, setMessages] = useState([
@@ -24,7 +25,7 @@ const ChatMessenger = () => {
       sender: 'Jane',
       text: 'this is me irl',
       timestamp: '17:21',
-      image: '/api/placeholder/200/200',
+      image: 'im1.jpg',
       avatar: null
     },
     {
@@ -36,6 +37,12 @@ const ChatMessenger = () => {
     }
   ]);
 
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/Home");
+  };
+
   const [newMessage, setNewMessage] = useState('');
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -46,6 +53,20 @@ const ChatMessenger = () => {
   useEffect(() => {
     scrollToBottom();
   }, [messages]);
+
+  const getRandomResponse = () => {
+    const randomNum = Math.floor(Math.random() * 3) + 1;
+    switch(randomNum) {
+      case 1:
+        return "oh good";
+      case 2:
+        return "thats interesting";
+      case 3:
+        return "i will look into it";
+      default:
+        return "ok";
+    }
+  };
 
   const handleSendMessage = () => {
     if (!newMessage.trim()) return;
@@ -61,12 +82,12 @@ const ChatMessenger = () => {
     setMessages([...messages, message]);
     setNewMessage('');
 
-    // Simulate a response
+    // Simulate a response with randomized replies
     setTimeout(() => {
       const response = {
         id: messages.length + 2,
         sender: 'Jane',
-        text: `You said: ${newMessage}`,
+        text: getRandomResponse(),
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         avatar: null
       };
@@ -80,22 +101,24 @@ const ChatMessenger = () => {
       <div className="bg-[#1E1E1E] p-4 flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <img 
-            src="/api/placeholder/40/40" 
+            src="im1.jpg" 
             alt="Profile" 
             className="rounded-full w-10 h-10"
           />
           <div>
-            <div className="text-white font-semibold">Jane Doe</div>
+            <div className="text-white font-semibold">John Doe</div>
             <div className="text-gray-400 text-xs">Online</div>
           </div>
         </div>
-        <button className="text-white">
+
+        <button className="text-white" onClick={handleClick}>
           <X size={24} />
         </button>
+        
       </div>
 
       {/* Messages */}
-      <div className="flex-grow overflow-y-auto p-4 space-y-3">
+      <div className="flex-grow overflow-y-auto p-4 space-y-4">
         {messages.map((message) => (
           <div 
             key={message.id} 
@@ -106,19 +129,20 @@ const ChatMessenger = () => {
             <div className={`
               max-w-[70%] 
               ${message.sender === 'John' 
-                ? 'bg-blue-600 text-white' 
+                ? 'bg-green-600 text-white' 
                 : 'bg-[#2C2C2C] text-white'}
-              p-2 rounded-lg
+              p-3 rounded-xl
+              text-base  // Increased text size
             `}>
               {message.image ? (
                 <img 
                   src={message.image} 
                   alt="Shared" 
-                  className="max-w-full rounded-lg mb-2"
+                  className="max-w-full rounded-lg mb-3"
                 />
               ) : null}
-              <div>{message.text}</div>
-              <div className="text-xs text-gray-300 text-right mt-1">
+              <div className="text-lg">{message.text}</div>
+              <div className="text-sm text-gray-300 text-right mt-2">
                 {message.timestamp}
               </div>
             </div>
@@ -142,14 +166,15 @@ const ChatMessenger = () => {
             flex-grow 
             bg-[#2C2C2C] 
             text-white 
-            p-2 
+            p-3 
             rounded-lg 
+            text-base
             focus:outline-none
           "
         />
         <button 
           onClick={handleSendMessage}
-          className="bg-blue-600 text-white p-2 rounded-full"
+          className="bg-green-600 text-white p-2 rounded-full"
         >
           <Send size={20} />
         </button>
