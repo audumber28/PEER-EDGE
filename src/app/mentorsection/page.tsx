@@ -102,7 +102,7 @@ export default function intrests() {
                       Create Account
                     </Button>
                   </Link>
-                  <SignInButton mode="redirect" redirectUrl="/intrests">
+                  <SignInButton mode="redirect" forceRedirectUrl="/intrests">
                     <Button 
                       variant="outline" 
                       className="w-full border-green-500/30 text-green-400 hover:bg-green-950/60 hover:border-green-500/50 transition-colors duration-300"

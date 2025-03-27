@@ -174,6 +174,7 @@ export default function HomePage() {
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Everything you need for your educational and career journey.
                 </p>
+
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
@@ -381,6 +382,7 @@ export default function HomePage() {
                     <CheckCircle className="h-5 w-5 text-primary" />
                     <div className="font-medium">Satisfaction guarantee</div>
                   </div>
+
                 </div>
                 <div className="rounded-lg bg-muted p-4">
                   <div className="flex items-center gap-4">
