@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import React from "react";
 import { ChevronLeft, Mail, Calendar, BookOpen, Award, MapPin, Link2, Github, Linkedin, Twitter, DollarSign, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/tower";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -54,17 +54,16 @@ interface Mentor {
 
 const mentors: Mentor[] = [
   {
-    name: "John Doe",
+    name: "Aazad College of Education",
     skillset: "Full Stack Development",
     expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
     profilePic: "/im1.jpg",
-    background: "Seasoned software engineer with 10+ years of experience in building scalable web applications.",
+    background: "Institution committed to innovative education and inclusive learning.",
     href: "#",
-    title: "Senior Software Engineer",
-    location: "San Francisco, CA",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
     availability: "Available from June 2025",
-    hourlyRate: "$120/hour",
-    email: "john.doe@example.com",
+    email: "aazad@example.com",
     socials: {
       linkedin: "https://linkedin.com/in/johndoe",
       github: "https://github.com/johndoe",
@@ -115,17 +114,16 @@ const mentors: Mentor[] = [
     ]
   },
   {
-    name: "Jane Smith",
+    name: "Ali College of Education",
     skillset: "Data Science",
     expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
     profilePic: "/im2.jpg",
-    background: "AI researcher with a PhD in Machine Learning, specializing in predictive analytics.",
+    background: "College offering courses designed for real-world skills and career growth.",
     href: "#",
-    title: "Lead Data Scientist",
+    title: "(Id: U-0003)",
     location: "Boston, MA",
     availability: "Available from July 2025",
-    hourlyRate: "$140/hour",
-    email: "jane.smith@example.com",
+    email: "ali@example.com",
     socials: {
       linkedin: "https://linkedin.com/in/janesmith",
       github: "https://github.com/janesmith",
@@ -169,16 +167,15 @@ const mentors: Mentor[] = [
     ]
   },
   {
-    name: "Alice Johnson",
+    name: "Bapatla College of Arts & Science ",
     skillset: "Cybersecurity",
     expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
     profilePic: "/im3.jpg",
-    background: "Certified ethical hacker with extensive experience in enterprise security solutions.",
+    background: "Academy focused on hands-on learning and accessibility in education.",
     href: "#",
-    title: "Security Architect",
+    title: "(Id: U-0003)",
     location: "Washington, DC",
     availability: "Available from May 2025",
-    hourlyRate: "$150/hour",
     email: "alice.johnson@example.com",
     socials: {
       linkedin: "https://linkedin.com/in/alicejohnson",
@@ -206,30 +203,6 @@ const mentors: Mentor[] = [
         description: "Conducted security assessments and penetration testing for Fortune 500 clients."
       }
     ]
-  },
-  {
-    name: "Michael Brown",
-    skillset: "Cloud Computing",
-    expertise: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Terraform", "CI/CD", "Microservices"],
-    profilePic: "/im4.jpg",
-    background: "Cloud solutions architect with expertise in multi-cloud strategies and DevOps.",
-    href: "#"
-  },
-  {
-    name: "Emily White",
-    skillset: "Blockchain Development",
-    expertise: ["Ethereum", "Solidity", "Smart Contracts", "Web3.js", "DeFi", "Tokenomics", "NFTs"],
-    profilePic: "/im5.jpg",
-    background: "Blockchain developer focused on DeFi applications and smart contract security.",
-    href: "#"
-  },
-  {
-    name: "Robert Green",
-    skillset: "UI/UX Design",
-    expertise: ["Figma", "Sketch", "Adobe XD", "Responsive Design", "User Research", "Wireframing", "Prototyping"],
-    profilePic: "/im6.jpg",
-    background: "Product designer with a passion for user-centric designs and accessibility.",
-    href: "#"
   },
 ];
 
@@ -281,7 +254,7 @@ const MentorProfile = () => {
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center py-6">
-              <div className="rounded-full bg-black p-3 w-12 h-12 mx-auto mb-4 flex items-center justify-center border border-red-500/30">
+              <div className=" bg-black p-3 w-12 h-12 mx-auto mb-4 flex items-center justify-center border border-red-500/30">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -293,7 +266,7 @@ const MentorProfile = () => {
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700 text-black font-medium" asChild>
                 <Link href="/mentors">
-                  <ChevronLeft className="mr-2 h-4 w-4" /> Back to Mentors
+                  <ChevronLeft className="mr-2 h-4 w-4" /> Back to Colleges
                 </Link>
               </Button>
             </CardFooter>
@@ -308,9 +281,9 @@ const MentorProfile = () => {
       <div className="container mx-auto py-12 px-4">
         <div className="mb-8">
           <Button variant="ghost" className="group mb-6 text-gray-400 hover:text-green-400 hover:bg-black/40" asChild>
-            <Link href="/mentors">
+            <Link href="/courses">
               <ChevronLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" /> 
-              Back to Mentors
+              Back to Colleges
             </Link>
           </Button>
         </div>
@@ -319,21 +292,14 @@ const MentorProfile = () => {
           {/* Left column - Profile information */}
           <div className="lg:col-span-1">
             <Card className="sticky top-6 border-green-500/20 bg-gray-900 shadow-md hover:shadow-green-900/20 transition-shadow duration-300">
-              <CardHeader className="text-center pb-4 pt-8 bg-gradient-to-b from-gray-800 to-gray-900 rounded-t-xl">
+              <CardHeader className="text-center pb-4 pt-8 bg-gradient-to-b from-gray-800 to-gray-900 ">
                 <div className="mb-4 relative mx-auto">
                   <div className="w-32 h-32 mx-auto relative">
-                    <div className="absolute -inset-0.5 rounded-full bg-gradient-to-tr from-green-500 to-emerald-600 opacity-75 blur"></div>
+                    <div className="absolute -inset-0.5 bg-gradient-to-tr from-green-500 to-emerald-600 opacity-75 blur"></div>
                     <Avatar className="w-32 h-32 border-4 border-black relative">
                       <AvatarImage src={mentor.profilePic} alt={mentor.name} />
                       <AvatarFallback className="text-2xl font-semibold bg-gray-800 text-green-400">{getInitials(mentor.name)}</AvatarFallback>
                     </Avatar>
-                  </div>
-                  <div className="inline-flex items-center justify-center absolute bottom-0 right-1/2 translate-x-16 translate-y-1/4 transform">
-                    <Badge 
-                      className="px-3 py-1.5 text-sm bg-gradient-to-r from-green-600 to-green-700 text-black font-medium shadow-md"
-                    >
-                      {mentor.skillset}
-                    </Badge>
                   </div>
                 </div>
                 <CardTitle className="text-3xl font-bold mt-4 text-white">{mentor.name}</CardTitle>
@@ -379,7 +345,7 @@ const MentorProfile = () => {
                       <Badge 
                         key={idx} 
                         variant="secondary" 
-                        className="rounded-md px-2.5 py-1 bg-black text-green-400 border border-green-500/30 hover:bg-green-900/30 hover:text-green-300 transition-colors"
+                        className=" px-2.5 py-1 bg-black text-green-400 border border-green-500/30 hover:bg-green-900/30 hover:text-green-300 transition-colors"
                       >
                         {skill}
                       </Badge>
@@ -395,28 +361,28 @@ const MentorProfile = () => {
                     <h3 className="font-medium mb-3 text-gray-300">Connect</h3>
                     <div className="flex space-x-2">
                       {mentor.socials.github && (
-                        <Button variant="outline" size="icon" asChild className="rounded-full border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
+                        <Button variant="outline" size="icon" asChild className=" border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
                           <a href={mentor.socials.github} target="_blank" rel="noopener noreferrer">
                             <Github className="h-4 w-4" />
                           </a>
                         </Button>
                       )}
                       {mentor.socials.linkedin && (
-                        <Button variant="outline" size="icon" asChild className="rounded-full border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
+                        <Button variant="outline" size="icon" asChild className=" border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
                           <a href={mentor.socials.linkedin} target="_blank" rel="noopener noreferrer">
                             <Linkedin className="h-4 w-4" />
                           </a>
                         </Button>
                       )}
                       {mentor.socials.twitter && (
-                        <Button variant="outline" size="icon" asChild className="rounded-full border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
+                        <Button variant="outline" size="icon" asChild className=" border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
                           <a href={mentor.socials.twitter} target="_blank" rel="noopener noreferrer">
                             <Twitter className="h-4 w-4" />
                           </a>
                         </Button>
                       )}
                       {mentor.socials.website && (
-                        <Button variant="outline" size="icon" asChild className="rounded-full border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
+                        <Button variant="outline" size="icon" asChild className=" border-green-500/30 bg-black/30 text-gray-300 hover:text-green-400 hover:border-green-500/50 hover:bg-black">
                           <a href={mentor.socials.website} target="_blank" rel="noopener noreferrer">
                             <Link2 className="h-4 w-4" />
                           </a>
@@ -426,9 +392,9 @@ const MentorProfile = () => {
                   </div>
                 )}
               </CardContent>
-              <CardFooter className="bg-gradient-to-b from-gray-900 to-black rounded-b-xl pt-2">
+              <CardFooter className="bg-gradient-to-b from-gray-900 to-black  pt-2">
                 <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium shadow-md hover:shadow-lg transition-all">
-                  Schedule a Session
+                  Register for Education
                 </Button>
               </CardFooter>
             </Card>
@@ -437,7 +403,7 @@ const MentorProfile = () => {
           {/* Right column - Tabs with content */}
           <div className="lg:col-span-2">
             <Card className="border-green-500/20 bg-gray-900 shadow-md">
-              <CardHeader className="bg-gray-900 rounded-t-xl">
+              <CardHeader className="bg-gray-900 ">
                 <Tabs defaultValue="about" className="w-full">
                   <TabsList className="grid w-full grid-cols-3 bg-black p-1">
                     <TabsTrigger 
@@ -479,7 +445,7 @@ const MentorProfile = () => {
                           </h3>
                           <div className="space-y-4">
                             {mentor.education.map((edu, idx) => (
-                              <div key={idx} className="rounded-lg border border-green-500/20 p-4 bg-black hover:bg-gray-800 hover:shadow-md hover:shadow-green-900/10 transition-all">
+                              <div key={idx} className=" border border-green-500/20 p-4 bg-black hover:bg-gray-800 hover:shadow-md hover:shadow-green-900/10 transition-all">
                                 <div className="flex justify-between items-start">
                                   <div>
                                     <h4 className="font-medium text-white">{edu.degree}</h4>
@@ -544,7 +510,7 @@ const MentorProfile = () => {
                           </div>
                         </div>
 
-                        <ScrollArea className="h-[500px] rounded-md pr-4">
+                        <ScrollArea className="h-[500px]  pr-4">
                           <div className="space-y-4">
                             {mentor.reviews.map((review, idx) => (
                               <Card key={idx} className="bg-gray-900 border-green-500/20 hover:border-green-500/40 hover:shadow-md hover:shadow-green-900/10 transition-all">
@@ -593,10 +559,7 @@ const MentorProfile = () => {
               </CardHeader>
               <CardFooter className="flex flex-col sm:flex-row gap-3">
                 <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg">
-                  <Calendar className="mr-2 h-4 w-4" /> Schedule a Session
-                </Button>
-                <Button variant="outline" className="w-full sm:w-auto border-green-500/30 text-green-400 hover:bg-green-900/30 hover:text-green-300">
-                  <MessageSquare className="mr-2 h-4 w-4" /> Send a Message
+                  <Calendar className="mr-2 h-4 w-4" /> Register for Education
                 </Button>
               </CardFooter>
             </Card>
