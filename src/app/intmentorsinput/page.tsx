@@ -103,7 +103,7 @@ export default function InternationalAdmissions() {
   return (
     <>
       <section className="flex flex-col max-w-7xl mx-auto py-10">
-        <h1 className="text-5xl font-bold text-center">
+        <h1 className="text-6xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-center">
           Lets Begin With Your{" "}
           <span className="text-emerald-500">International</span> Journey!
         </h1>
@@ -111,18 +111,18 @@ export default function InternationalAdmissions() {
           enter your details and connect with your mentor!
         </p>
       </section>
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center">
         <img
           src="/flying.svg"
           alt="Flying illustration"
-          className="w-200 h-200"
+          className="w-96 h-96 md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px]"
         />
       </div>
       <div className="min-h-screen bg-gray-900 text-emerald-500 w-full flex justify-center py-10">
         <div className="container max-w-2xl px-8 py-8">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
-              <label className="block text-emerald-300 text-lg font-medium">
+              <label className="block text-emerald-300 text-2xl font-medium">
                 Select Country of Study
               </label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -140,7 +140,16 @@ export default function InternationalAdmissions() {
                       className="text-emerald-500 focus:ring-emerald-500"
                       required
                     />
-                    <label className="text-emerald-300">{country.name}</label>
+                    <label className="text-emerald-300 flex items-center gap-2">
+                      {country.name}
+                      <img
+                        src={`/flags/${country.name
+                          .toLowerCase()
+                          .replace(/\s+/g, "-")}.svg`}
+                        alt={`${country.name} flag`}
+                        className="w-7 h-5 object-contain"
+                      />
+                    </label>
                   </div>
                 ))}
               </div>
@@ -182,7 +191,7 @@ export default function InternationalAdmissions() {
               />
             </div>
 
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <label className="block text-emerald-300">Email Address</label>
               <input
                 type="email"
@@ -192,7 +201,7 @@ export default function InternationalAdmissions() {
                 className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
                 required
               />
-            </div>
+            </div> */}
 
             <div className="space-y-2">
               <label className="block text-emerald-300">Phone Number</label>
@@ -206,12 +215,14 @@ export default function InternationalAdmissions() {
               />
             </div>
 
-            <button
-              type="submit"
-              className="w-full bg-emerald-600 text-black py-3 rounded hover:bg-emerald-500 transition duration-300 mt-8"
-            >
-              Submit Application
-            </button>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                className="w-full bg-emerald-600 text-black py-3 rounded hover:bg-emerald-500 transition duration-300 mt-8"
+              >
+                Find Mentors
+              </button>
+            </div>
           </form>
         </div>
       </div>

@@ -49,7 +49,7 @@ export default function HomePage() {
               Profile
             </Link>
             <Link
-              href="/international"
+              href="/intmentorsinput"
               className="text-sm font-medium flex items-center gap-1 hover:text-primary"
             >
               <Globe className="h-4 w-4" />
@@ -63,13 +63,13 @@ export default function HomePage() {
               Course Insights
             </Link>
             <Link href="/signin">
-            <Button
-              className={
-                "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
-              }
-            >
-              Sign Up
-            </Button>
+              <Button
+                className={
+                  "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
+                }
+              >
+                Sign Up
+              </Button>
             </Link>
           </nav>
         </div>
@@ -539,7 +539,8 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} Peer<span className="text-emerald-500">Edge</span>. All rights
+              &copy; {new Date().getFullYear()} Peer
+              <span className="text-emerald-500">Edge</span>. All rights
               reserved.
             </p>
             <div className="flex gap-4">
