@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function intrests() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white overflow-hidden">
       {/* Animated Background Overlay */}
@@ -102,7 +102,7 @@ export default function Home() {
                       Create Account
                     </Button>
                   </Link>
-                  <SignInButton mode="redirect" redirectUrl="/home">
+                  <SignInButton mode="redirect" redirectUrl="/intrests">
                     <Button 
                       variant="outline" 
                       className="w-full border-green-500/30 text-green-400 hover:bg-green-950/60 hover:border-green-500/50 transition-colors duration-300"
