@@ -11,31 +11,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
-// Import mentor data
-const mentorData = [
-  {
-    id: 31,
-    name: "Dr. Maya Gupta",
-    expertise: "Mathematics & Algorithms",
-    skills: [
-      "Algorithm Analysis",
-      "Competitive Programming",
-      "Dynamic Programming",
-      "Graph Theory",
-      "Number Theory",
-      "Mathematical Optimization",
-      "Discrete Mathematics",
-      "Complexity Theory"
-    ],
-    profilePic: "/avatars/maya-gupta.jpg",
-    background: "Mathematics professor specializing in algorithm analysis and competitive programming",
-    rating: 4.9,
-    reviewCount: 134,
-    availability: "Available from 2025-04-01"
-  },
-  // ... rest of your mentor data
-];
-
 interface Mentor {
   id: number;
   name: string;
@@ -48,12 +23,261 @@ interface Mentor {
   availability: string;
 }
 
+// Import mentor data
+const mentorData: Mentor[] = [
+  {
+    id: 1,
+    name: "Dr. Maya Gupta",
+    expertise: "Mathematics & Algorithms",
+    skills: [
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Number Theory",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/maya-gupta.jpg",
+    background: "Mathematics professor specializing in algorithm analysis and competitive programming",
+    rating: 4.9,
+    reviewCount: 134,
+    availability: "Available from 2025-04-01"
+  },
+  {
+    id: 2,
+    name: "Prof. Adrian Foster",
+    expertise: "Physics & Computing",
+    skills: [
+      "Algorithm Analysis",
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/adrian-foster.jpg",
+    background: "Computational physicist with expertise in scientific computing and numerical methods",
+    rating: 4.8,
+    reviewCount: 92,
+    availability: "Available now"
+  },
+  {
+    id: 3,
+    name: "Grace Wong",
+    expertise: "Software Testing",
+    skills: [
+      "Graph Theory",
+      "Mathematical Optimization",
+      "Discrete Mathematics"
+    ],
+    profilePic: "/avatars/grace-wong.jpg",
+    background: "ISTQB certified tester teaching modern testing practices and automation",
+    rating: 4.7,
+    reviewCount: 88,
+    availability: "Available from 2025-04-05"
+  },
+  {
+    id: 4,
+    name: "Dr. Aisha Khan",
+    expertise: "Data Structures",
+    skills: [
+      "Algorithm Analysis",
+      "Graph Theory",
+      "Number Theory",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/aisha-khan.jpg",
+    background: "Computer Science professor specializing in fundamental data structures and algorithms",
+    rating: 4.9,
+    reviewCount: 167,
+    availability: "Limited availability"
+  },
+  {
+    id: 5,
+    name: "Lucas Fernandez",
+    expertise: "Open Source Development",
+    skills: [
+      "Algorithm Analysis",
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Graph Theory",
+      "Number Theory",
+      "Mathematical Optimization",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/lucas-fernandez.jpg",
+    background: "Open source contributor and maintainer, guiding students in OSS contributions",
+    rating: 4.8,
+    reviewCount: 73,
+    availability: "Available this week"
+  },
+  {
+    id: 6,
+    name: "Dr. Rebecca Stone",
+    expertise: "Research Paper Writing",
+    skills: [
+      "Algorithm Analysis",
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Graph Theory"
+    ],
+    profilePic: "/avatars/rebecca-stone.jpg",
+    background: "Published researcher helping students with paper writing and journal submissions",
+    rating: 4.8,
+    reviewCount: 105,
+    availability: "Available from 2025-04-02"
+  },
+  {
+    id: 7,
+    name: "Nathan Price",
+    expertise: "Interview Preparation",
+    skills: [
+      "Number Theory",
+      "Mathematical Optimization",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/nathan-price.jpg",
+    background: "Tech interviewer with experience at FAANG companies, specializing in coding interviews",
+    rating: 4.9,
+    reviewCount: 192,
+    availability: "Available now"
+  },
+  {
+    id: 8,
+    name: "Dr. Isabella Romano",
+    expertise: "Computer Networks",
+    skills: [
+      "Algorithm Analysis"
+    ],
+    profilePic: "/avatars/isabella-romano.jpg",
+    background: "Networking professor with industry experience in network protocols and security",
+    rating: 4.7,
+    reviewCount: 84,
+    availability: "Available from 2025-04-03"
+  },
+  {
+    id: 9,
+    name: "Prof. Hiroshi Tanaka",
+    expertise: "Operating Systems",
+    skills: [
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Graph Theory"
+    ],
+    profilePic: "/avatars/hiroshi-tanaka.jpg",
+    background: "OS researcher teaching system programming and kernel development",
+    rating: 4.8,
+    reviewCount: 112,
+    availability: "Available next week"
+  },
+  {
+    id: 10,
+    name: "Sophia Anderson",
+    expertise: "Presentation Skills",
+    skills: [
+      "Algorithm Analysis",
+      "Dynamic Programming",
+      "Graph Theory",
+      "Mathematical Optimization",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/sophia-anderson.jpg",
+    background: "Communications expert helping students with technical presentations and public speaking",
+    rating: 4.8,
+    reviewCount: 143,
+    availability: "Available now"
+  },
+  {
+    id: 11,
+    name: "Dr. Victor Popov",
+    expertise: "Computer Graphics",
+    skills: [
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/victor-popov.jpg",
+    background: "Graphics researcher specializing in real-time rendering and OpenGL",
+    rating: 4.7,
+    reviewCount: 76,
+    availability: "Available from 2025-04-10"
+  },
+  {
+    id: 12,
+    name: "Linda Martinez",
+    expertise: "Code Review Skills",
+    skills: [
+      "Dynamic Programming",
+      "Graph Theory",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/linda-martinez.jpg",
+    background: "Senior developer teaching best practices in code review and collaboration",
+    rating: 4.8,
+    reviewCount: 95,
+    availability: "Available this week"
+  },
+  {
+    id: 13,
+    name: "Prof. Alan Wright",
+    expertise: "Compiler Design",
+    skills: [
+      "Algorithm Analysis",
+      "Competitive Programming",
+      "Dynamic Programming",
+      "Graph Theory",
+      "Number Theory",
+      "Mathematical Optimization",
+      "Discrete Mathematics",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/alan-wright.jpg",
+    background: "Language design expert teaching compiler construction and optimization",
+    rating: 4.7,
+    reviewCount: 68,
+    availability: "Limited availability"
+  },
+  {
+    id: 14,
+    name: "Dr. Sarah O'Connor",
+    expertise: "Software Architecture",
+    skills: [
+      "Competitive Programming",
+      "Graph Theory",
+      "Mathematical Optimization",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/sarah-oconnor.jpg",
+    background: "Software architect teaching system design and architectural patterns",
+    rating: 4.9,
+    reviewCount: 124,
+    availability: "Available from 2025-04-01"
+  },
+  {
+    id: 15,
+    name: "Mohammed Al-Rashid",
+    expertise: "Version Control",
+    skills: [
+      "Competitive Programming",
+      "Graph Theory",
+      "Mathematical Optimization",
+      "Complexity Theory"
+    ],
+    profilePic: "/avatars/mohammed-alrashid.jpg",
+    background: "DevOps engineer teaching Git workflows and collaboration tools",
+    rating: 4.8,
+    reviewCount: 87,
+    availability: "Available now"
+  }
+];
+
+
 const MentorProfile = () => {
   const params = useParams();
   const mentorId = Number(params.id);
   
   // Find mentor by adjusting the ID offset
-  const mentor = mentorData.find(m => m.id === mentorId + 31);
+  const mentor = mentorData.find(m => m.id === mentorId);
 
   // State for current time and user
   const [currentDateTime, setCurrentDateTime] = useState("");

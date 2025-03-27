@@ -14,7 +14,7 @@ const mentorData = [
   // Previous mentors (1-30 remain the same...)
   
   {
-    id: 31,
+    id: 2,
     name: "Dr. Maya Gupta",
     expertise: "Mathematics & Algorithms",
     profilePic: "/avatars/maya-gupta.jpg",
@@ -24,7 +24,7 @@ const mentorData = [
     availability: "Available from 2025-04-01"
   },
   {
-    id: 32,
+    id: 3,
     name: "Prof. Adrian Foster",
     expertise: "Physics & Computing",
     profilePic: "/avatars/adrian-foster.jpg",
@@ -34,7 +34,7 @@ const mentorData = [
     availability: "Available now"
   },
   {
-    id: 33,
+    id: 4,
     name: "Grace Wong",
     expertise: "Software Testing",
     profilePic: "/avatars/grace-wong.jpg",
@@ -44,7 +44,7 @@ const mentorData = [
     availability: "Available from 2025-04-05"
   },
   {
-    id: 34,
+    id: 5,
     name: "Dr. Aisha Khan",
     expertise: "Data Structures",
     profilePic: "/avatars/aisha-khan.jpg",
@@ -54,7 +54,7 @@ const mentorData = [
     availability: "Limited availability"
   },
   {
-    id: 35,
+    id: 6,
     name: "Lucas Fernandez",
     expertise: "Open Source Development",
     profilePic: "/avatars/lucas-fernandez.jpg",
@@ -64,7 +64,7 @@ const mentorData = [
     availability: "Available this week"
   },
   {
-    id: 36,
+    id: 7,
     name: "Dr. Rebecca Stone",
     expertise: "Research Paper Writing",
     profilePic: "/avatars/rebecca-stone.jpg",
@@ -74,7 +74,7 @@ const mentorData = [
     availability: "Available from 2025-04-02"
   },
   {
-    id: 37,
+    id: 8,
     name: "Nathan Price",
     expertise: "Interview Preparation",
     profilePic: "/avatars/nathan-price.jpg",
@@ -84,7 +84,7 @@ const mentorData = [
     availability: "Available now"
   },
   {
-    id: 38,
+    id: 9,
     name: "Dr. Isabella Romano",
     expertise: "Computer Networks",
     profilePic: "/avatars/isabella-romano.jpg",
@@ -94,7 +94,7 @@ const mentorData = [
     availability: "Available from 2025-04-03"
   },
   {
-    id: 39,
+    id: 10,
     name: "Prof. Hiroshi Tanaka",
     expertise: "Operating Systems",
     profilePic: "/avatars/hiroshi-tanaka.jpg",
@@ -104,7 +104,7 @@ const mentorData = [
     availability: "Available next week"
   },
   {
-    id: 40,
+    id: 11,
     name: "Sophia Anderson",
     expertise: "Presentation Skills",
     profilePic: "/avatars/sophia-anderson.jpg",
@@ -114,7 +114,7 @@ const mentorData = [
     availability: "Available now"
   },
   {
-    id: 41,
+    id: 12,
     name: "Dr. Victor Popov",
     expertise: "Computer Graphics",
     profilePic: "/avatars/victor-popov.jpg",
@@ -124,7 +124,7 @@ const mentorData = [
     availability: "Available from 2025-04-10"
   },
   {
-    id: 42,
+    id: 13,
     name: "Linda Martinez",
     expertise: "Code Review Skills",
     profilePic: "/avatars/linda-martinez.jpg",
@@ -134,7 +134,7 @@ const mentorData = [
     availability: "Available this week"
   },
   {
-    id: 43,
+    id: 14,
     name: "Prof. Alan Wright",
     expertise: "Compiler Design",
     profilePic: "/avatars/alan-wright.jpg",
@@ -144,7 +144,7 @@ const mentorData = [
     availability: "Limited availability"
   },
   {
-    id: 44,
+    id: 15,
     name: "Dr. Sarah O'Connor",
     expertise: "Software Architecture",
     profilePic: "/avatars/sarah-oconnor.jpg",
@@ -154,7 +154,7 @@ const mentorData = [
     availability: "Available from 2025-04-01"
   },
   {
-    id: 45,
+    id: 16,
     name: "Mohammed Al-Rashid",
     expertise: "Version Control",
     profilePic: "/avatars/mohammed-alrashid.jpg",

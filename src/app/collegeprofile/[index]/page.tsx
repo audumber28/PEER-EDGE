@@ -32,7 +32,7 @@ interface Mentor {
     twitter?: string;
     website?: string;
   };
-  education?: {
+  faculty?: {
     degree: string;
     institution: string;
     year: string;
@@ -57,7 +57,7 @@ const mentors: Mentor[] = [
     name: "Aazad College of Education",
     skillset: "Full Stack Development",
     expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
-    profilePic: "/im1.jpg",
+    profilePic: "/imp1.jpg",
     background: "Institution committed to innovative education and inclusive learning.",
     href: "#",
     title: " (Id: C-39230)",
@@ -70,30 +70,30 @@ const mentors: Mentor[] = [
       twitter: "https://twitter.com/johndoe",
       website: "https://johndoe.dev"
     },
-    education: [
+    faculty: [
       {
-        degree: "M.S. Computer Science",
-        institution: "Stanford University",
-        year: "2014"
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
       },
       {
-        degree: "B.S. Computer Engineering",
-        institution: "MIT",
-        year: "2012"
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
       }
     ],
     experience: [
       {
         position: "Senior Software Engineer",
-        company: "Google",
-        duration: "2018 - Present",
+        company: "Duration: 6 months",
+        duration: "Present",
         description: "Leading the development of cloud-based solutions and mentoring junior developers."
       },
       {
         position: "Software Engineer",
-        company: "Facebook",
-        duration: "2014 - 2018",
-        description: "Worked on React ecosystem and contributed to open source projects."
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
       }
     ],
     reviews: [
@@ -101,14 +101,14 @@ const mentors: Mentor[] = [
         name: "Sarah Johnson",
         rating: 5,
         date: "March 15, 2025",
-        comment: "John is an exceptional mentor. His deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
         avatar: "/review1.jpg"
       },
       {
         name: "Michael Chen",
         rating: 5,
         date: "February 28, 2025",
-        comment: "The guidance I received was invaluable. John has a gift for explaining complex concepts in an understandable way.",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
         avatar: "/review2.jpg"
       }
     ]
@@ -117,7 +117,7 @@ const mentors: Mentor[] = [
     name: "Ali College of Education",
     skillset: "Data Science",
     expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
-    profilePic: "/im2.jpg",
+    profilePic: "/imp2.jpg",
     background: "College offering courses designed for real-world skills and career growth.",
     href: "#",
     title: "(Id: U-0003)",
@@ -130,7 +130,7 @@ const mentors: Mentor[] = [
       twitter: "https://twitter.com/janesmith",
       website: "https://janesmith.io"
     },
-    education: [
+    faculty: [
       {
         degree: "Ph.D. Machine Learning",
         institution: "Harvard University",
@@ -170,7 +170,7 @@ const mentors: Mentor[] = [
     name: "Bapatla College of Arts & Science ",
     skillset: "Cybersecurity",
     expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
-    profilePic: "/im3.jpg",
+    profilePic: "/imp3.jpg",
     background: "Academy focused on hands-on learning and accessibility in education.",
     href: "#",
     title: "(Id: U-0003)",
@@ -182,7 +182,7 @@ const mentors: Mentor[] = [
       github: "https://github.com/alicejohnson",
       website: "https://alicejohnson.net"
     },
-    education: [
+    faculty: [
       {
         degree: "M.S. Information Security",
         institution: "Carnegie Mellon University",
@@ -213,6 +213,7 @@ const MentorProfile = () => {
   // Convert index to number and check if valid
   const mentorIndex = Number(index);
   const mentor = mentors[mentorIndex];
+  const num = mentorIndex;
 
   // Create initials for Avatar fallback
   const getInitials = (name: string) => {
@@ -248,9 +249,9 @@ const MentorProfile = () => {
         <div className="max-w-md mx-auto">
           <Card className="border-gray-800 bg-gray-900 shadow-lg text-white">
             <CardHeader>
-              <CardTitle className="text-2xl text-white">Mentor Not Found</CardTitle>
+              <CardTitle className="text-2xl text-white">College Not Found</CardTitle>
               <CardDescription className="text-gray-400">
-                We couldn't find the mentor you're looking for.
+                We couldn't find the college you're looking for.
               </CardDescription>
             </CardHeader>
             <CardContent className="text-center py-6">
@@ -260,12 +261,12 @@ const MentorProfile = () => {
                 </svg>
               </div>
               <p className="text-gray-400 mb-6">
-                The mentor profile you're trying to view may have been removed or doesn't exist.
+                The college you're trying to view may have been removed or doesn't exist.
               </p>
             </CardContent>
             <CardFooter>
               <Button className="w-full bg-green-600 hover:bg-green-700 text-black font-medium" asChild>
-                <Link href="/mentors">
+                <Link href="/courses">
                   <ChevronLeft className="mr-2 h-4 w-4" /> Back to Colleges
                 </Link>
               </Button>
@@ -416,7 +417,7 @@ const MentorProfile = () => {
                       value="experience" 
                       className="data-[state=active]:bg-green-600 data-[state=active]:text-black data-[state=active]:shadow-sm text-gray-300"
                     >
-                      Experience
+                      Internships
                     </TabsTrigger>
                     <TabsTrigger 
                       value="reviews" 
@@ -437,20 +438,20 @@ const MentorProfile = () => {
                         </p>
                       </div>
 
-                      {mentor.education && (
+                      {mentor.faculty && (
                         <div className="mt-8">
                           <h3 className="text-xl font-semibold mb-4 flex items-center text-white">
                             <BookOpen className="mr-2 h-5 w-5 text-green-500" />
-                            Education
+                            Faculty
                           </h3>
                           <div className="space-y-4">
-                            {mentor.education.map((edu, idx) => (
+                            {mentor.faculty.map((edu, idx) => (
                               <div key={idx} className=" border border-green-500/20 p-4 bg-black hover:bg-gray-800 hover:shadow-md hover:shadow-green-900/10 transition-all">
                                 <div className="flex justify-between items-start">
-                                  <div>
+                                  <Link href={`/mentorprofile/${idx + num + num + 1}`}>
                                     <h4 className="font-medium text-white">{edu.degree}</h4>
                                     <p className="text-sm text-gray-400">{edu.institution}</p>
-                                  </div>
+                                  </Link>
                                   <Badge variant="outline" className="border-green-500/30 bg-black text-green-400">
                                     {edu.year}
                                   </Badge>
@@ -466,7 +467,7 @@ const MentorProfile = () => {
                   <TabsContent value="experience" className="mt-6">
                     {mentor.experience ? (
                       <div className="space-y-6">
-                        <h3 className="text-xl font-semibold mb-3 text-white">Professional Experience</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-white">Internships available</h3>
                         <div className="space-y-6">
                           {mentor.experience.map((exp, idx) => (
                             <Card key={idx} className="bg-gray-900 border-green-500/20 border-l-4 border-l-green-500 hover:shadow-md hover:shadow-green-900/10 transition-all">

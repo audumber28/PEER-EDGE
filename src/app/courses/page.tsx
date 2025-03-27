@@ -27,9 +27,9 @@ const allCourseCategories = [
 const collegeData = [
     {
         id: 1,
-        name: "MIT Technology Institute",
+        name: "Azaad College of Education",
         category: "Computer Science",
-        logo: "/logos/mit-tech.jpg",
+        logo: "imp1.jpg",
         rating: 4.9,
         reviewCount: 245,
         curriculum: {
@@ -69,7 +69,7 @@ const collegeData = [
         id: 2,
         name: "Abhinav Institute of Management & Technology",
         category: "Management & Technology",
-        logo: "/logos/abhinav-institute.jpg",
+        logo: "imp2.jpg",
         rating: 4.5,
         reviewCount: 180,
         curriculum: {
@@ -109,7 +109,7 @@ const collegeData = [
         id: 3,
         name: "Abhyudaya Mahila Degree College",
         category: "Arts & Science",
-        logo: "/logos/abhyudaya-mahila.jpg",
+        logo: "imp3.jpg",
         rating: 4.3,
         reviewCount: 150,
         curriculum: {
@@ -149,7 +149,7 @@ const collegeData = [
         id: 4,
         name: "A.B.M. College",
         category: "Commerce & Management",
-        logo: "/logos/abm-college.jpg",
+        logo: "imp4.jpg",
         rating: 4.2,
         reviewCount: 135,
         curriculum: {
@@ -189,7 +189,7 @@ const collegeData = [
         id: 5,
         name: "A.B.R College of Education",
         category: "Education & Teacher Training",
-        logo: "/logos/abr-college.jpg",
+        logo: "imp5.jpg",
         rating: 4.4,
         reviewCount: 120,
         curriculum: {
@@ -229,7 +229,7 @@ const collegeData = [
         id: 6,
         name: "A.C. Patil College of Engineering",
         category: "Engineering & Technology",
-        logo: "/logos/ac-patil.jpg",
+        logo: "imp1.jpg",
         rating: 4.6,
         reviewCount: 210,
         curriculum: {
@@ -269,7 +269,7 @@ const collegeData = [
         id: 7,
         name: "A.D.M. College for Women",
         category: "Women's College - Arts & Science",
-        logo: "/logos/adm-women.jpg",
+        logo: "imp2.jpg",
         rating: 4.3,
         reviewCount: 140,
         curriculum: {
@@ -309,7 +309,7 @@ const collegeData = [
         id: 8,
         name: "A.E.S. National College",
         category: "Commerce & Science",
-        logo: "/logos/aes-national.jpg",
+        logo: "imp3.jpg",
         rating: 4.2,
         reviewCount: 125,
         curriculum: {
@@ -349,7 +349,7 @@ const collegeData = [
         id: 9,
         name: "A.G. Teachers College",
         category: "Education & Teacher Training",
-        logo: "/logos/ag-teachers.jpg",
+        logo: "imp4.jpg",
         rating: 4.5,
         reviewCount: 160,
         curriculum: {
@@ -386,10 +386,90 @@ const collegeData = [
         }
     },
     {
+        id: 10,
+        name: "Goa College of Engineering",
+        category: "Education & Engineer Training",
+        logo: "imp1.jpg",
+        rating: 4.5,
+        reviewCount: 160,
+        curriculum: {
+            strength: "bachelor technical training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 11,
+        name: "Don Bosco College",
+        category: "Education & Engineering Training",
+        logo: "imp2.jpg",
+        rating: 4.4,
+        reviewCount: 160,
+        curriculum: {
+            strength: "Bachelor Engineering training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
         id: 12,
         name: "A.G.K.M. College",
         category: "Affiliated College",
-        logo: "/logos/agkm-college.jpg",
+        logo: "imp5.jpg",
         rating: 4.1,
         reviewCount: 110,
         curriculum: {

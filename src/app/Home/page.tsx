@@ -62,15 +62,15 @@ export default function HomePage() {
               <BookOpen className="h-4 w-4" />
               Course Insights
             </Link>
-            <a href="/signin">
-              <Button
-                className={
-                  "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
-                }
-              >
-                Sign Up
-              </Button>
-            </a>
+            <Link href="/signin">
+            <Button
+              className={
+                "bg-emerald-500 text-primary-foreground hover:bg-emerald-600 cursor-pointer"
+              }
+            >
+              Sign Up
+            </Button>
+            </Link>
           </nav>
         </div>
       </header>
