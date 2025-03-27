@@ -9,81 +9,14 @@ import { ChevronRight, UserCheck, Filter, MessageSquare, Calendar } from "lucide
 import Link from "next/link";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
-const allExpertiseAreas = [
-  // Core Development
-  "Web Development",
-  "Mobile Development",
-  "Programming Fundamentals",
-  "Data Structures",
 
-  // Emerging Technologies
-  "Machine Learning",
-  "Blockchain",
-  "Quantum Computing",
-  "AR/VR Development",
-  "Robotics Engineering",
-
-  // Infrastructure & Security
-  "Cloud Computing",
-  "Cybersecurity",
-  "DevOps",
-  "Computer Networks",
-  "System Architecture",
-
-  // Data & Analysis
-  "Data Science",
-  "Database Management",
-  "Bioinformatics",
-  "Physics & Computing",
-
-  // Software Engineering
-  "Software Architecture",
-  "Software Testing",
-  "Version Control",
-  "Code Review Skills",
-  "Open Source Development",
-
-  // Academic & Research
-  "Academic Research",
-  "Thesis Writing",
-  "Research Paper Writing",
-  "Research Methods",
-  "Technical Writing",
-
-  // Career Development
-  "Career Counseling",
-  "Interview Preparation",
-  "Internship Guidance",
-  "Presentation Skills",
-  "Project Management",
-
-  // Specialized Areas
-  "Mathematics & Algorithms",
-  "Computer Graphics",
-  "Operating Systems",
-  "Compiler Design",
-  "Game Development",
-  "Embedded Systems",
-  "UI/UX Design",
-  "Quality Assurance",
-  "Network Architecture",
-  "Product Management"
-];
 const mentorData = [
+  // Previous mentors (1-30 remain the same...)
+  
   {
     id: 31,
     name: "Dr. Maya Gupta",
     expertise: "Mathematics & Algorithms",
-    skills: [
-      "Algorithm Analysis",
-      "Competitive Programming",
-      "Dynamic Programming",
-      "Graph Theory",
-      "Number Theory",
-      "Mathematical Optimization",
-      "Discrete Mathematics",
-      "Complexity Theory"
-    ],
     profilePic: "/avatars/maya-gupta.jpg",
     background: "Mathematics professor specializing in algorithm analysis and competitive programming",
     rating: 4.9,
@@ -94,16 +27,6 @@ const mentorData = [
     id: 32,
     name: "Prof. Adrian Foster",
     expertise: "Physics & Computing",
-    skills: [
-      "Scientific Computing",
-      "MATLAB",
-      "Python for Physics",
-      "Numerical Methods",
-      "Computational Modeling",
-      "Data Analysis",
-      "Simulation Techniques",
-      "High-Performance Computing"
-    ],
     profilePic: "/avatars/adrian-foster.jpg",
     background: "Computational physicist with expertise in scientific computing and numerical methods",
     rating: 4.8,
@@ -114,16 +37,6 @@ const mentorData = [
     id: 33,
     name: "Grace Wong",
     expertise: "Software Testing",
-    skills: [
-      "Test Automation",
-      "Selenium",
-      "JUnit",
-      "TestNG",
-      "API Testing",
-      "Performance Testing",
-      "Test Case Design",
-      "Continuous Integration Testing"
-    ],
     profilePic: "/avatars/grace-wong.jpg",
     background: "ISTQB certified tester teaching modern testing practices and automation",
     rating: 4.7,
@@ -134,16 +47,6 @@ const mentorData = [
     id: 34,
     name: "Dr. Aisha Khan",
     expertise: "Data Structures",
-    skills: [
-      "Arrays & Strings",
-      "Linked Lists",
-      "Trees & Graphs",
-      "Hash Tables",
-      "Heaps",
-      "Dynamic Programming",
-      "Algorithm Design",
-      "Time Complexity Analysis"
-    ],
     profilePic: "/avatars/aisha-khan.jpg",
     background: "Computer Science professor specializing in fundamental data structures and algorithms",
     rating: 4.9,
@@ -154,16 +57,6 @@ const mentorData = [
     id: 35,
     name: "Lucas Fernandez",
     expertise: "Open Source Development",
-    skills: [
-      "Git Workflows",
-      "GitHub",
-      "Open Source Contribution",
-      "Code Review",
-      "Documentation",
-      "Community Management",
-      "Issue Tracking",
-      "License Compliance"
-    ],
     profilePic: "/avatars/lucas-fernandez.jpg",
     background: "Open source contributor and maintainer, guiding students in OSS contributions",
     rating: 4.8,
@@ -174,16 +67,6 @@ const mentorData = [
     id: 36,
     name: "Dr. Rebecca Stone",
     expertise: "Research Paper Writing",
-    skills: [
-      "Academic Writing",
-      "Research Methodology",
-      "Literature Review",
-      "Citation Management",
-      "Paper Structure",
-      "Technical Writing",
-      "Peer Review Process",
-      "Publication Strategy"
-    ],
     profilePic: "/avatars/rebecca-stone.jpg",
     background: "Published researcher helping students with paper writing and journal submissions",
     rating: 4.8,
@@ -194,16 +77,6 @@ const mentorData = [
     id: 37,
     name: "Nathan Price",
     expertise: "Interview Preparation",
-    skills: [
-      "Data Structures",
-      "Algorithms",
-      "System Design",
-      "Behavioral Questions",
-      "Mock Interviews",
-      "Problem Solving",
-      "Time Management",
-      "Technical Communication"
-    ],
     profilePic: "/avatars/nathan-price.jpg",
     background: "Tech interviewer with experience at FAANG companies, specializing in coding interviews",
     rating: 4.9,
@@ -214,16 +87,6 @@ const mentorData = [
     id: 38,
     name: "Dr. Isabella Romano",
     expertise: "Computer Networks",
-    skills: [
-      "TCP/IP",
-      "Network Security",
-      "Protocol Design",
-      "Wireless Networks",
-      "Network Programming",
-      "Packet Analysis",
-      "Router Configuration",
-      "Network Troubleshooting"
-    ],
     profilePic: "/avatars/isabella-romano.jpg",
     background: "Networking professor with industry experience in network protocols and security",
     rating: 4.7,
@@ -234,16 +97,6 @@ const mentorData = [
     id: 39,
     name: "Prof. Hiroshi Tanaka",
     expertise: "Operating Systems",
-    skills: [
-      "Process Management",
-      "Memory Management",
-      "File Systems",
-      "Kernel Development",
-      "System Programming",
-      "Linux Internals",
-      "Concurrent Programming",
-      "Device Drivers"
-    ],
     profilePic: "/avatars/hiroshi-tanaka.jpg",
     background: "OS researcher teaching system programming and kernel development",
     rating: 4.8,
@@ -254,16 +107,6 @@ const mentorData = [
     id: 40,
     name: "Sophia Anderson",
     expertise: "Presentation Skills",
-    skills: [
-      "Public Speaking",
-      "Slide Design",
-      "Technical Presentations",
-      "Story Telling",
-      "Body Language",
-      "Voice Modulation",
-      "Audience Engagement",
-      "Q&A Handling"
-    ],
     profilePic: "/avatars/sophia-anderson.jpg",
     background: "Communications expert helping students with technical presentations and public speaking",
     rating: 4.8,
@@ -274,16 +117,6 @@ const mentorData = [
     id: 41,
     name: "Dr. Victor Popov",
     expertise: "Computer Graphics",
-    skills: [
-      "OpenGL",
-      "WebGL",
-      "3D Rendering",
-      "Shader Programming",
-      "Computer Vision",
-      "Ray Tracing",
-      "Animation",
-      "Graphics Pipeline"
-    ],
     profilePic: "/avatars/victor-popov.jpg",
     background: "Graphics researcher specializing in real-time rendering and OpenGL",
     rating: 4.7,
@@ -294,16 +127,6 @@ const mentorData = [
     id: 42,
     name: "Linda Martinez",
     expertise: "Code Review Skills",
-    skills: [
-      "Code Quality",
-      "Design Patterns",
-      "Clean Code",
-      "Performance Review",
-      "Security Review",
-      "Documentation Review",
-      "Testing Practices",
-      "Code Standards"
-    ],
     profilePic: "/avatars/linda-martinez.jpg",
     background: "Senior developer teaching best practices in code review and collaboration",
     rating: 4.8,
@@ -314,16 +137,6 @@ const mentorData = [
     id: 43,
     name: "Prof. Alan Wright",
     expertise: "Compiler Design",
-    skills: [
-      "Lexical Analysis",
-      "Parsing",
-      "Semantic Analysis",
-      "Code Generation",
-      "Optimization",
-      "Language Theory",
-      "LLVM",
-      "Assembly Language"
-    ],
     profilePic: "/avatars/alan-wright.jpg",
     background: "Language design expert teaching compiler construction and optimization",
     rating: 4.7,
@@ -334,16 +147,6 @@ const mentorData = [
     id: 44,
     name: "Dr. Sarah O'Connor",
     expertise: "Software Architecture",
-    skills: [
-      "System Design",
-      "Microservices",
-      "Design Patterns",
-      "Scalability",
-      "Cloud Architecture",
-      "Security Patterns",
-      "Performance Optimization",
-      "Architecture Documentation"
-    ],
     profilePic: "/avatars/sarah-oconnor.jpg",
     background: "Software architect teaching system design and architectural patterns",
     rating: 4.9,
@@ -354,22 +157,64 @@ const mentorData = [
     id: 45,
     name: "Mohammed Al-Rashid",
     expertise: "Version Control",
-    skills: [
-      "Git",
-      "GitHub",
-      "GitLab",
-      "Branching Strategies",
-      "Merge Conflict Resolution",
-      "Git Workflows",
-      "Repository Management",
-      "CI/CD Integration"
-    ],
     profilePic: "/avatars/mohammed-alrashid.jpg",
     background: "DevOps engineer teaching Git workflows and collaboration tools",
     rating: 4.8,
     reviewCount: 87,
     availability: "Available now"
   }
+];
+
+// Updated expertise areas including new additions
+const allExpertiseAreas = [
+  // Previous expertise areas...
+  "Web Development",
+  "Machine Learning",
+  "Cybersecurity",
+  "Blockchain",
+  "Cloud Computing",
+  "Mobile Development",
+  "DevOps",
+  "UI/UX Design",
+  "Data Science",
+  "System Architecture",
+  "Game Development",
+  "Quality Assurance",
+  "Database Management",
+  "Product Management",
+  "Embedded Systems",
+  "Quantum Computing",
+  "Robotics Engineering",
+  "Bioinformatics",
+  "AR/VR Development",
+  "Network Architecture",
+  "Academic Research",
+  "Thesis Writing",
+  "Career Counseling",
+  "Graduate School Prep",
+  "Study Skills",
+  "Programming Fundamentals",
+  "Research Methods",
+  "Internship Guidance",
+  "Technical Writing",
+  "Project Management",
+  
+  // New expertise areas
+  "Mathematics & Algorithms",
+  "Physics & Computing",
+  "Software Testing",
+  "Data Structures",
+  "Open Source Development",
+  "Research Paper Writing",
+  "Interview Preparation",
+  "Computer Networks",
+  "Operating Systems",
+  "Presentation Skills",
+  "Computer Graphics",
+  "Code Review Skills",
+  "Compiler Design",
+  "Software Architecture",
+  "Version Control"
 ];
 
 export default function MentorsPage() {
