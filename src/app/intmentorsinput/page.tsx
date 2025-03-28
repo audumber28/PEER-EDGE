@@ -1,220 +1,107 @@
 "use client";
 
-import React, { useState } from "react";
-
-// Define types for form data and country/course options
-interface StudentApplication {
-  country: string;
-  course: string;
-  name: string;
-  email: string;
-  phoneNumber: string;
-}
-
-const countriesData = [
-  {
-    name: "United States",
-    courses: [
-      "Computer Science",
-      "Business Administration",
-      "Engineering",
-      "Data Science",
-    ],
-  },
-  {
-    name: "Canada",
-    courses: [
-      "Software Engineering",
-      "Biotechnology",
-      "Digital Media",
-      "Environmental Science",
-    ],
-  },
-  {
-    name: "United Kingdom",
-    courses: [
-      "International Business",
-      "Artificial Intelligence",
-      "Mechanical Engineering",
-      "Psychology",
-    ],
-  },
-  {
-    name: "Australia",
-    courses: [
-      "Marine Biology",
-      "Cybersecurity",
-      "Renewable Energy",
-      "Sports Management",
-    ],
-  },
-  {
-    name: "Germany",
-    courses: [
-      "Automotive Engineering",
-      "Robotics",
-      "Chemistry",
-      "Industrial Design",
-    ],
-  },
-];
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function InternationalAdmissions() {
-  const [application, setApplication] = useState<StudentApplication>({
-    country: "",
-    course: "",
+  const router = useRouter();
+  const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
+    country: "",
+    course: "",
   });
 
-  const [availableCourses, setAvailableCourses] = useState<string[]>([]);
-
-  const handleCountryChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const selectedCountry = e.target.value;
-    const countryData = countriesData.find((c) => c.name === selectedCountry);
-
-    setApplication((prev) => ({
-      ...prev,
-      country: selectedCountry,
-      course: "", // Reset course when country changes
-    }));
-
-    setAvailableCourses(countryData ? countryData.courses : []);
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setApplication((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Add submission logic
-    console.log("Application Submitted:", application);
-    alert("Application Received! We will contact you soon.");
+    const queryParams = new URLSearchParams({
+      country: formData.country,
+      course: formData.course,
+    }).toString();
+    router.push(`/intmentor?${queryParams}`);
   };
 
   return (
-    <>
-      <section className="flex flex-col max-w-7xl mx-auto py-10">
-        <h1 className="text-5xl font-bold text-center">
-          Lets Begin With Your{" "}
-          <span className="text-emerald-500">International</span> Journey!
-        </h1>
-        <p className="text-yellow-50 text-center">
-          enter your details and connect with your mentor!
-        </p>
-      </section>
-      <div className="flex justify-center mb-8">
-        <img
-          src="/flying.svg"
-          alt="Flying illustration"
-          className="w-200 h-200"
-        />
-      </div>
-      <div className="min-h-screen bg-gray-900 text-emerald-500 w-full flex justify-center py-10">
-        <div className="container max-w-2xl px-8 py-8">
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-4">
-              <label className="block text-emerald-300 text-lg font-medium">
-                Select Country of Study
-              </label>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {countriesData.map((country) => (
-                  <div
-                    key={country.name}
-                    className="flex items-center space-x-2"
-                  >
-                    <input
-                      type="radio"
-                      name="country"
-                      value={country.name}
-                      checked={application.country === country.name}
-                      onChange={handleCountryChange}
-                      className="text-emerald-500 focus:ring-emerald-500"
-                      required
-                    />
-                    <label className="text-emerald-300">{country.name}</label>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {application.country && (
-              <div className="space-y-4">
-                <label className="block text-emerald-300 text-lg font-medium">
-                  Select Course
-                </label>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {availableCourses.map((course) => (
-                    <div key={course} className="flex items-center space-x-2">
-                      <input
-                        type="radio"
-                        name="course"
-                        value={course}
-                        checked={application.course === course}
-                        onChange={handleInputChange}
-                        className="text-emerald-500 focus:ring-emerald-500"
-                        required
-                      />
-                      <label className="text-emerald-300">{course}</label>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="space-y-2">
-              <label className="block text-emerald-300">Full Name</label>
-              <input
-                type="text"
-                name="name"
-                value={application.name}
-                onChange={handleInputChange}
-                className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
-                required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <label className="block text-emerald-300">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                value={application.email}
-                onChange={handleInputChange}
-                className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
-                required
-              />
-            </div>
-
-            <div className="space-y-2">
-              <label className="block text-emerald-300">Phone Number</label>
-              <input
-                type="tel"
-                name="phoneNumber"
-                value={application.phoneNumber}
-                onChange={handleInputChange}
-                className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
-                required
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full bg-emerald-600 text-black py-3 rounded hover:bg-emerald-500 transition duration-300 mt-8"
-            >
-              Submit Application
-            </button>
-          </form>
+    <div className="min-h-screen bg-gray-900 text-emerald-500 flex flex-col items-center py-10">
+      <h1 className="text-4xl font-bold mb-6">International Admissions</h1>
+      <form onSubmit={handleSubmit} className="bg-gray-800 p-6 rounded-lg shadow-lg w-96">
+        <div className="mb-4">
+          <label className="block text-yellow-50">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          />
         </div>
-      </div>
-    </>
+        <div className="mb-4">
+          <label className="block text-yellow-50">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-yellow-50">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-yellow-50">Country</label>
+          <select
+            name="country"
+            value={formData.country}
+            onChange={handleChange}
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          >
+            <option value="">Select Country</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="United Kingdom">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="Germany">Germany</option>
+          </select>
+        </div>
+        <div className="mb-4">
+          <label className="block text-yellow-50">Course</label>
+          <select
+            name="course"
+            value={formData.course}
+            onChange={handleChange}
+            required
+            className="w-full p-2 rounded bg-gray-700 text-white"
+          >
+            <option value="">Select Course</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Software Engineering">Software Engineering</option>
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Automotive Engineering">Automotive Engineering</option>
+          </select>
+        </div>
+        <button type="submit" className="w-full bg-emerald-600 hover:bg-emerald-700 p-2 rounded text-white">
+          Find Mentors
+        </button>
+      </form>
+    </div>
   );
 }

@@ -18,13 +18,13 @@ export default function SignInPage() {
 
   useEffect(() => {
     if (isSignedIn) {
-      router.push("/interest-selection"); // Redirect to interest selection after sign-in
+      router.push("/interest-selection");
     }
   }, [isSignedIn, router]);
 
   useEffect(() => {
-    // Simulate form loading delay
-    const timer = setTimeout(() => setLoading(false), 1000); // Adjust timing if needed
+    
+    const timer = setTimeout(() => setLoading(false), 1000); 
     return () => clearTimeout(timer);
   }, []);
 
@@ -142,7 +142,7 @@ export default function SignInPage() {
                   <line x1="15" y1="12" x2="3" y2="12"></line>
                 </svg>
               </div>
-              <CardTitle className="text-2xl text-center text-green-400 font-bold">Welcome Back</CardTitle>
+              <CardTitle className="text-2xl text-center text-green-400 font-bold">Welcome</CardTitle>
               <CardDescription className="text-center text-gray-400">Sign in to continue your mentoring journey</CardDescription>
             </CardHeader>
             <CardContent>
