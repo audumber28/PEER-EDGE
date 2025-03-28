@@ -593,9 +593,7 @@ const Page = () => {
   const course = searchParams.get("course");
 
   const filteredMentors = mentorsData.filter(
-    (mentor) =>
-      (!country || mentor.country === country) &&
-      (!course || mentor.course === course)
+    (mentor) => mentor.country === country && mentor.course === course
   );
 
   return (

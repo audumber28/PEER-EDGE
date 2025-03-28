@@ -168,7 +168,7 @@ export default function InternationalAdmissions() {
                         value={course}
                         checked={formData.course === course}
                         onChange={handleChange}
-                        className="text-emerald-500 focus:ring-emerald-500"
+                        className="text-emerald-500 focus:ring-emerald-500 w-fit"
                         required
                       />
                       <label className="text-emerald-300">{course}</label>
