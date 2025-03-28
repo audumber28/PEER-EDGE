@@ -132,27 +132,27 @@ const mentors: Mentor[] = [
     },
     faculty: [
       {
-        degree: "Ph.D. Machine Learning",
-        institution: "Harvard University",
-        year: "2018"
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
       },
       {
-        degree: "M.S. Computer Science",
-        institution: "UC Berkeley",
-        year: "2015"
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
       }
     ],
     experience: [
       {
         position: "Lead Data Scientist",
-        company: "Netflix",
-        duration: "2020 - Present",
+        company: "Duration: 2 months",
+        duration: "available",
         description: "Leading a team building recommendation algorithms and predictive models."
       },
       {
         position: "Research Scientist",
         company: "Amazon",
-        duration: "2018 - 2020",
+        duration: "available",
         description: "Developed machine learning models for personalized recommendations."
       }
     ],
@@ -160,7 +160,7 @@ const mentors: Mentor[] = [
       {
         name: "David Wilson",
         rating: 5,
-        date: "March 20, 2025",
+        date: "Duration: 8 months",
         comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
         avatar: "/review3.jpg"
       }
@@ -184,23 +184,1333 @@ const mentors: Mentor[] = [
     },
     faculty: [
       {
-        degree: "M.S. Information Security",
-        institution: "Carnegie Mellon University",
-        year: "2016"
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
       }
     ],
     experience: [
       {
-        position: "Security Architect",
-        company: "Microsoft",
-        duration: "2019 - Present",
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
         description: "Designing and implementing security frameworks for enterprise applications."
       },
       {
-        position: "Security Consultant",
-        company: "Deloitte",
-        duration: "2016 - 2019",
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
         description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },{
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
+      },
+      {
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "available",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Amazon",
+        duration: "available",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "Duration: 8 months",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Bapatla College of Arts & Science ",
+    skillset: "Cybersecurity",
+    expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
+    profilePic: "/imp3.jpg",
+    background: "Academy focused on hands-on learning and accessibility in education.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Washington, DC",
+    availability: "Available from May 2025",
+    email: "alice.johnson@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+      website: "https://alicejohnson.net"
+    },
+    faculty: [
+      {
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
+        description: "Designing and implementing security frameworks for enterprise applications."
+      },
+      {
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
+        description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Goa College of Engineering",
+    skillset: "Computer Engineering",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp3.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-69420)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Nitesh Naik",
+        institution: "Deep Learning",
+        year: "available"
+      },
+      {
+        degree: "Prof. Maruskha Mascharanhes",
+        institution: "Data Structures and Algorithm",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "GEC is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
+      },
+      {
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "available",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Amazon",
+        duration: "available",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "Duration: 8 months",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Bapatla College of Arts & Science ",
+    skillset: "Cybersecurity",
+    expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
+    profilePic: "/imp3.jpg",
+    background: "Academy focused on hands-on learning and accessibility in education.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Washington, DC",
+    availability: "Available from May 2025",
+    email: "alice.johnson@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+      website: "https://alicejohnson.net"
+    },
+    faculty: [
+      {
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
+        description: "Designing and implementing security frameworks for enterprise applications."
+      },
+      {
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
+        description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },{
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
+      },
+      {
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "available",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Amazon",
+        duration: "available",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "Duration: 8 months",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Bapatla College of Arts & Science ",
+    skillset: "Cybersecurity",
+    expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
+    profilePic: "/imp3.jpg",
+    background: "Academy focused on hands-on learning and accessibility in education.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Washington, DC",
+    availability: "Available from May 2025",
+    email: "alice.johnson@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+      website: "https://alicejohnson.net"
+    },
+    faculty: [
+      {
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
+        description: "Designing and implementing security frameworks for enterprise applications."
+      },
+      {
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
+        description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Goa College of Engineering",
+    skillset: "Computer Engineering",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp3.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-69420)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Nitesh Naik",
+        institution: "Deep Learning",
+        year: "available"
+      },
+      {
+        degree: "Prof. Maruskha Mascharanhes",
+        institution: "Data Structures and Algorithm",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "GEC is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
+      },
+      {
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "available",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Amazon",
+        duration: "available",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "Duration: 8 months",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Bapatla College of Arts & Science ",
+    skillset: "Cybersecurity",
+    expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
+    profilePic: "/imp3.jpg",
+    background: "Academy focused on hands-on learning and accessibility in education.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Washington, DC",
+    availability: "Available from May 2025",
+    email: "alice.johnson@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+      website: "https://alicejohnson.net"
+    },
+    faculty: [
+      {
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
+        description: "Designing and implementing security frameworks for enterprise applications."
+      },
+      {
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
+        description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },{
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Shubh Solanki",
+        institution: "Frontend developer",
+        year: "Present"
+      },
+      {
+        degree: "Audumber Shirodkhar",
+        institution: "fake stack",
+        year: "Present"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "available",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Amazon",
+        duration: "available",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "Duration: 8 months",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Bapatla College of Arts & Science ",
+    skillset: "Cybersecurity",
+    expertise: ["Network Security", "Ethical Hacking", "Compliance", "Penetration Testing", "SIEM", "Security Auditing"],
+    profilePic: "/imp3.jpg",
+    background: "Academy focused on hands-on learning and accessibility in education.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Washington, DC",
+    availability: "Available from May 2025",
+    email: "alice.johnson@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+      website: "https://alicejohnson.net"
+    },
+    faculty: [
+      {
+        degree: "Maruskha Mascharanes",
+        institution: "Data Structures and Algorithms",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Deep Learning",
+        company: "Duration: 5 months",
+        duration: "Present",
+        description: "Designing and implementing security frameworks for enterprise applications."
+      },
+      {
+        position: "Cybersecurity",
+        company: "duration: 6 months",
+        duration: "Present",
+        description: "Conducted security assessments and penetration testing for Fortune 500 clients."
+      }
+    ]
+  },
+  {
+    name: "Ali College of Education",
+    skillset: "Data Science",
+    expertise: ["Python", "Machine Learning", "AI", "TensorFlow", "PyTorch", "Data Visualization", "Big Data"],
+    profilePic: "/imp2.jpg",
+    background: "College offering courses designed for real-world skills and career growth.",
+    href: "#",
+    title: "(Id: U-0003)",
+    location: "Boston, MA",
+    availability: "Available from July 2025",
+    email: "ali@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+      twitter: "https://twitter.com/janesmith",
+      website: "https://janesmith.io"
+    },
+    faculty: [
+      {
+        degree: "Vedant Joshi",
+        institution: "App Development",
+        year: "Available"
+      },
+      {
+        degree: "Chirag Mahajan",
+        institution: "Blockchain Management",
+        year: "Available"
+      }
+    ],
+    experience: [
+      {
+        position: "Lead Data Scientist",
+        company: "Duration: 2 months",
+        duration: "Present",
+        description: "Leading a team building recommendation algorithms and predictive models."
+      },
+      {
+        position: "Research Scientist",
+        company: "Duration: 8 months",
+        duration: "gello'",
+        description: "Developed machine learning models for personalized recommendations."
+      }
+    ],
+    reviews: [
+      {
+        name: "David Wilson",
+        rating: 5,
+        date: "March 20, 2025",
+        comment: "Jane's expertise in machine learning is extraordinary. She helped me understand complex ML concepts that I struggled with for months.",
+        avatar: "/review3.jpg"
+      }
+    ]
+  },
+  {
+    name: "Aazad College of Education",
+    skillset: "Full Stack Development",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp1.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-39230)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Maya Gupta",
+        institution: "Mathematics & Algorithms",
+        year: "available"
+      },
+      {
+        degree: "Prof. Adrian Foster",
+        institution: "Physics & Computing",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "Azaad is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
+      }
+    ]
+  },
+  {
+    name: "Goa College of Engineering",
+    skillset: "Computer Engineering",
+    expertise: ["React", "Node.js", "AWS", "TypeScript", "GraphQL", "MongoDB", "Docker"],
+    profilePic: "/imp3.jpg",
+    background: "Institution committed to innovative education and inclusive learning.",
+    href: "#",
+    title: " (Id: C-69420)",
+    location: "Andhra Pradesh,Prakasam",
+    availability: "Available from June 2025",
+    email: "aazad@example.com",
+    socials: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+      twitter: "https://twitter.com/johndoe",
+      website: "https://johndoe.dev"
+    },
+    faculty: [
+      {
+        degree: "Dr. Nitesh Naik",
+        institution: "Deep Learning",
+        year: "available"
+      },
+      {
+        degree: "Prof. Maruskha Mascharanhes",
+        institution: "Data Structures and Algorithm",
+        year: "available"
+      }
+    ],
+    experience: [
+      {
+        position: "Senior Software Engineer",
+        company: "Duration: 6 months",
+        duration: "Present",
+        description: "Leading the development of cloud-based solutions and mentoring junior developers."
+      },
+      {
+        position: "Software Engineer",
+        company: "Duration: 3 months",
+        duration: "Present",
+        description: "Working on React ecosystem and contributed to open source projects."
+      }
+    ],
+    reviews: [
+      {
+        name: "Sarah Johnson",
+        rating: 5,
+        date: "March 15, 2025",
+        comment: "GEC is an exceptional college. Worked in deep knowledge of React and system architecture helped me level up my skills tremendously.",
+        avatar: "/review1.jpg"
+      },
+      {
+        name: "Michael Chen",
+        rating: 5,
+        date: "February 28, 2025",
+        comment: "The guidance I received was invaluable. The college has a gift for explaining complex concepts in an understandable way.",
+        avatar: "/review2.jpg"
       }
     ]
   },
@@ -228,7 +1538,7 @@ const MentorProfile = () => {
   const renderStars = (rating: number) => {
     return (
       <div className="flex gap-0.5">
-        {[...Array(5)].map((_, i) => (
+        {[...Array(7)].map((_, i) => (
           <svg
             key={i}
             xmlns="http://www.w3.org/2000/svg"
@@ -283,7 +1593,7 @@ const MentorProfile = () => {
         <div className="mb-8">
           <Button variant="ghost" className="group mb-6 text-gray-400 hover:text-green-400 hover:bg-black/40" asChild>
             <Link href="/courses">
-              <ChevronLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" /> 
+              <ChevronLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
               Back to Colleges
             </Link>
           </Button>
@@ -394,9 +1704,12 @@ const MentorProfile = () => {
                 )}
               </CardContent>
               <CardFooter className="bg-gradient-to-b from-gray-900 to-black  pt-2">
-                <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium shadow-md hover:shadow-lg transition-all">
-                  Register for Education
-                </Button>
+                <Link
+                  href="https://www.nitap.ac.in/news-details?slno=bDlLaGN3dEk0WjZwZWNpaTRBOUVpdz09&notice=Notification-for-Summer-Internship-2024-at-NIT-Arunachal-Pradesh-for-both-Inhouse-and-Outside-Students"
+                  className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md flex items-center justify-center"
+                >
+                  <Calendar className="mr-2 h-4 w-4" /> Register for Internship
+                </Link>
               </CardFooter>
             </Card>
           </div>
@@ -407,20 +1720,20 @@ const MentorProfile = () => {
               <CardHeader className="bg-gray-900 ">
                 <Tabs defaultValue="about" className="w-full">
                   <TabsList className="grid w-full grid-cols-3 bg-black p-1">
-                    <TabsTrigger 
-                      value="about" 
+                    <TabsTrigger
+                      value="about"
                       className="data-[state=active]:bg-green-600 data-[state=active]:text-black data-[state=active]:shadow-sm text-gray-300"
                     >
                       About
                     </TabsTrigger>
-                    <TabsTrigger 
-                      value="experience" 
+                    <TabsTrigger
+                      value="experience"
                       className="data-[state=active]:bg-green-600 data-[state=active]:text-black data-[state=active]:shadow-sm text-gray-300"
                     >
                       Internships
                     </TabsTrigger>
-                    <TabsTrigger 
-                      value="reviews" 
+                    <TabsTrigger
+                      value="reviews"
                       className="data-[state=active]:bg-green-600 data-[state=active]:text-black data-[state=active]:shadow-sm text-gray-300"
                     >
                       Reviews
@@ -559,9 +1872,12 @@ const MentorProfile = () => {
                 </CardDescription>
               </CardHeader>
               <CardFooter className="flex flex-col sm:flex-row gap-3">
-                <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg">
-                  <Calendar className="mr-2 h-4 w-4" /> Register for Education
-                </Button>
+                <Link
+                  href="https://www.nitap.ac.in/news-details?slno=bDlLaGN3dEk0WjZwZWNpaTRBOUVpdz09&notice=Notification-for-Summer-Internship-2024-at-NIT-Arunachal-Pradesh-for-both-Inhouse-and-Outside-Students"
+                  className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md flex items-center justify-center"
+                >
+                  <Calendar className="mr-2 h-4 w-4" /> Register for Internship
+                </Link>
               </CardFooter>
             </Card>
           </div>

@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 
 const mentorData = [
   // Previous mentors (1-30 remain the same...)
-  
+
   {
     id: 2,
     name: "Dr. Maya Gupta",
@@ -198,7 +198,7 @@ const allExpertiseAreas = [
   "Internship Guidance",
   "Technical Writing",
   "Project Management",
-  
+
   // New expertise areas
   "Mathematics & Algorithms",
   "Physics & Computing",
@@ -241,10 +241,10 @@ export default function MentorsPage() {
 
   const toggleInterest = (expertise: string) => {
     setSelectedInterests(prev => {
-      const newInterests = prev.includes(expertise) 
-        ? prev.filter(i => i !== expertise) 
+      const newInterests = prev.includes(expertise)
+        ? prev.filter(i => i !== expertise)
         : [...prev, expertise];
-      
+
       localStorage.setItem("userInterests", JSON.stringify(newInterests));
       return newInterests;
     });
@@ -293,8 +293,8 @@ export default function MentorsPage() {
         {/* Filter controls */}
         <div className="mb-8 flex flex-col sm:flex-row justify-between items-center">
           <div className="mb-4 sm:mb-0">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               onClick={toggleFilter}
               className="border-green-500/30 text-green-400 hover:bg-green-500/10 hover:text-green-300"
             >
@@ -307,16 +307,16 @@ export default function MentorsPage() {
               <>
                 <span className="text-sm text-gray-400">Active filters:</span>
                 {selectedInterests.map(interest => (
-                  <Badge 
+                  <Badge
                     key={interest}
-                    variant="secondary" 
+                    variant="secondary"
                     className="bg-green-500/20 text-green-300 hover:bg-green-500/30"
                   >
                     {interest}
                   </Badge>
                 ))}
-                <Button 
-                  variant="link" 
+                <Button
+                  variant="link"
                   onClick={resetFilters}
                   className="text-green-400 hover:text-green-300 p-0 h-auto"
                 >
@@ -340,11 +340,11 @@ export default function MentorsPage() {
               <ScrollArea className="h-[200px] rounded-md pr-4">
                 <div className="flex flex-wrap gap-2">
                   {allExpertiseAreas.map(expertise => (
-                    <Badge 
+                    <Badge
                       key={expertise}
                       variant={selectedInterests.includes(expertise) ? "default" : "outline"}
-                      className={selectedInterests.includes(expertise) 
-                        ? "bg-green-600 hover:bg-green-700 text-black cursor-pointer" 
+                      className={selectedInterests.includes(expertise)
+                        ? "bg-green-600 hover:bg-green-700 text-black cursor-pointer"
                         : "border-green-500/30 text-gray-300 hover:border-green-500/50 hover:bg-green-900/20 cursor-pointer"}
                       onClick={() => toggleInterest(expertise)}
                     >
@@ -355,14 +355,14 @@ export default function MentorsPage() {
               </ScrollArea>
             </CardContent>
             <CardFooter className="flex justify-between">
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 onClick={resetFilters}
                 className="border-green-500/30 text-green-400 hover:bg-green-500/10"
               >
                 Reset
               </Button>
-              <Button 
+              <Button
                 onClick={applyFilters}
                 className="bg-green-600 hover:bg-green-700 text-black font-medium"
               >
@@ -376,8 +376,8 @@ export default function MentorsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {mentors.length > 0 ? (
             mentors.map((mentor) => (
-              <Card 
-                key={mentor.id} 
+              <Card
+                key={mentor.id}
                 className="border-green-500/20 bg-gray-900 shadow-md hover:shadow-green-900/20 hover:border-green-500/30 transition-all duration-300"
               >
                 <CardHeader className="pb-2">
@@ -389,7 +389,7 @@ export default function MentorsPage() {
                       </Avatar>
                       <div>
                         <CardTitle className="text-lg text-white">{mentor.name}</CardTitle>
-                        <Badge 
+                        <Badge
                           className="mt-1 bg-gradient-to-r from-green-600 to-green-700 text-black font-medium"
                         >
                           {mentor.expertise}
@@ -424,16 +424,15 @@ export default function MentorsPage() {
                 </CardContent>
                 <Separator className="bg-gray-800" />
                 <CardFooter className="flex justify-between pt-4">
-                  <Button 
-                    variant="outline" 
-                    size="sm"
-                    className="border-green-500/30 text-green-400 hover:bg-green-500/10"
+                  <Link
+                    href="/chat-app"
+                    className="inline-flex items-center justify-center border border-green-500/30 text-green-400 hover:bg-green-500/10 px-3 py-1 rounded-md text-sm"
                   >
                     <MessageSquare className="mr-2 h-4 w-4" />
                     Message
-                  </Button>
-                  <Button 
-                    size="sm" 
+                  </Link>
+                  <Button
+                    size="sm"
                     asChild
                     className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium"
                   >
@@ -452,7 +451,7 @@ export default function MentorsPage() {
               <p className="text-gray-400 mb-4">
                 We couldn't find any mentors matching your selected interests.
               </p>
-              <Button 
+              <Button
                 onClick={resetFilters}
                 className="bg-green-600 hover:bg-green-700 text-black font-medium"
               >
@@ -465,8 +464,8 @@ export default function MentorsPage() {
         {/* Show more button */}
         {mentors.length > 0 && mentors.length < mentorData.length && (
           <div className="mt-8 text-center">
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               onClick={() => setShowAllMentors(true)}
               className="border-green-500/30 text-green-400 hover:bg-green-500/10"
             >

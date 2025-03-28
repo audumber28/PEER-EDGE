@@ -275,7 +275,7 @@ const mentorData: Mentor[] = [
 const MentorProfile = () => {
   const params = useParams();
   const mentorId = Number(params.id);
-  
+
   // Find mentor by adjusting the ID offset
   const mentor = mentorData.find(m => m.id === mentorId);
 
@@ -376,7 +376,7 @@ const MentorProfile = () => {
         <div className="mb-8">
           <Button variant="ghost" className="group mb-6 text-gray-400 hover:text-green-400 hover:bg-black/40" asChild>
             <Link href="/mentors">
-              <ChevronLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" /> 
+              <ChevronLeft className="mr-2 h-4 w-4 transition-transform group-hover:-translate-x-1" />
               Back to Mentors
             </Link>
           </Button>
@@ -405,7 +405,7 @@ const MentorProfile = () => {
                 </div>
                 <CardTitle className="text-3xl font-bold mt-4 text-white">{mentor.name}</CardTitle>
               </CardHeader>
-              
+
               <CardContent className="space-y-6 pb-8">
                 <div className="flex flex-col space-y-3">
                   <div className="flex items-center text-gray-300">
@@ -425,9 +425,9 @@ const MentorProfile = () => {
                   <h3 className="font-medium mb-3 text-gray-300">Skills</h3>
                   <div className="flex flex-wrap gap-2">
                     {mentor.skills.map((skill, idx) => (
-                      <Badge 
-                        key={idx} 
-                        variant="secondary" 
+                      <Badge
+                        key={idx}
+                        variant="secondary"
                         className="rounded-md px-2.5 py-1 bg-black text-green-400 border border-green-500/30 hover:bg-green-900/30 hover:text-green-300 transition-colors"
                       >
                         {skill}
@@ -436,7 +436,7 @@ const MentorProfile = () => {
                   </div>
                 </div>
               </CardContent>
-              
+
               <CardFooter className="bg-gradient-to-b from-gray-900 to-black rounded-b-xl pt-2">
                 <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium shadow-md hover:shadow-lg transition-all">
                   Schedule a Session
@@ -485,9 +485,12 @@ const MentorProfile = () => {
                 <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg">
                   <Calendar className="mr-2 h-4 w-4" /> Schedule a Session
                 </Button>
-                <Button variant="outline" className="w-full sm:w-auto border-green-500/30 text-green-400 hover:bg-green-900/30 hover:text-green-300">
+                <Link
+                  href="/chat-app"
+                  className="w-full sm:w-auto border border-green-500/30 text-green-400 hover:bg-green-900/30 hover:text-green-300 px-4 py-2 rounded-md flex items-center justify-center"
+                >
                   <MessageSquare className="mr-2 h-4 w-4" /> Send a Message
-                </Button>
+                </Link>
               </CardFooter>
             </Card>
           </div>

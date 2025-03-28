@@ -509,7 +509,7 @@ const collegeData = [
         id: 13,
         name: "A.L. College of Education",
         category: "Affiliated College",
-        logo: "/logos/al-college.jpg",
+        logo: "imp5.jpg",
         rating: 4.3,
         reviewCount: 130,
         curriculum: {
@@ -549,7 +549,7 @@ const collegeData = [
         id: 14,
         name: "Ali College of Education",
         category: "Affiliated College",
-        logo: "/logos/ali-college.jpg",
+        logo: "imp4.jpg",
         rating: 4.0,
         reviewCount: 100,
         curriculum: {
@@ -589,7 +589,7 @@ const collegeData = [
         id: 15,
         name: "AL Momin College of Education",
         category: "Affiliated College",
-        logo: "/logos/al-momin.jpg",
+        logo: "imp3",
         rating: 4.2,
         reviewCount: 115,
         curriculum: {
@@ -629,7 +629,7 @@ const collegeData = [
         id: 16,
         name: "Alpha College of Education",
         category: "Affiliated College",
-        logo: "/logos/alpha-edu.jpg",
+        logo: "imp2.jpg",
         rating: 4.1,
         reviewCount: 105,
         curriculum: {
@@ -669,7 +669,7 @@ const collegeData = [
         id: 17,
         name: "Alpha College of Education, Kanigiri",
         category: "Affiliated College",
-        logo: "/logos/alpha-kanigiri.jpg",
+        logo: "imp1.jpg",
         rating: 4.0,
         reviewCount: 95,
         curriculum: {
@@ -709,7 +709,7 @@ const collegeData = [
         id: 18,
         name: "Alpha Degree College",
         category: "Affiliated College",
-        logo: "/logos/alpha-degree.jpg",
+        logo: "imp5.jpg",
         rating: 4.2,
         reviewCount: 120,
         curriculum: {
@@ -749,7 +749,7 @@ const collegeData = [
         id: 19,
         name: "Aman Showkath B.Ed College",
         category: "Affiliated College",
-        logo: "/logos/aman-showkath.jpg",
+        logo: "imp4.jpg",
         rating: 4.1,
         reviewCount: 110,
         curriculum: {
@@ -789,9 +789,209 @@ const collegeData = [
         id: 20,
         name: "A.M.G. College of Education",
         category: "Affiliated College",
-        logo: "/logos/amg-edu.jpg",
+        logo: "imp3.jpg",
         rating: 4.3,
         reviewCount: 125,
+        curriculum: {
+            strength: "Comprehensive teacher training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 21,
+        name: "National Institute Technology of Goa",
+        category: "Affiliated College",
+        logo: "imp2.jpg",
+        rating: 4.3,
+        reviewCount: 125,
+        curriculum: {
+            strength: "Comprehensive teacher training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 22,
+        name: "National Institute Technology of Bombay",
+        category: "Affiliated College",
+        logo: "imp1.jpg",
+        rating: 4.0,
+        reviewCount: 106,
+        curriculum: {
+            strength: "Comprehensive teacher training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 23,
+        name: "Indian Institute Technology of Bombay",
+        category: "Affiliated College",
+        logo: "imp5.jpg",
+        rating: 4.8,
+        reviewCount: 136,
+        curriculum: {
+            strength: "Comprehensive teacher training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 24,
+        name: "Indian Institute Technology of Madras",
+        category: "Affiliated College",
+        logo: "imp4.jpg",
+        rating: 4.3,
+        reviewCount: 98,
+        curriculum: {
+            strength: "Comprehensive teacher training programs",
+            highlights: [
+                "B.Ed. and M.Ed. courses with hands-on training",
+                "Emphasis on modern teaching methods",
+                "Research opportunities in education psychology"
+            ]
+        },
+        faculty: {
+            quality: "Highly experienced and research-driven faculty",
+            highlights: [
+                "Well-qualified professors with extensive teaching experience",
+                "Workshops on pedagogy and classroom management",
+                "Mentorship for aspiring educators"
+            ]
+        },
+        internships: {
+            quality: "Internship opportunities in top schools and colleges",
+            highlights: [
+                "Teaching practice in reputed schools",
+                "Focus on innovative lesson planning",
+                "Hands-on experience in curriculum development"
+            ]
+        },
+        placements: {
+            record: "High placement success in the education sector",
+            highlights: [
+                "80% placement rate within 6 months",
+                "Alumni working as educators in top schools",
+                "Strong industry partnerships for placements"
+            ]
+        }
+    },
+    {
+        id: 25,
+        name: "Indian Institute Technology of Goa",
+        category: "Affiliated College",
+        logo: "imp4.jpg",
+        rating: 3.3,
+        reviewCount: 77,
         curriculum: {
             strength: "Comprehensive teacher training programs",
             highlights: [
