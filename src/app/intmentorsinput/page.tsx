@@ -1,17 +1,22 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-// Define types for form data and country/course options
-interface StudentApplication {
-  country: string;
-  course: string;
+interface FormData {
   name: string;
   email: string;
-  phoneNumber: string;
+  phone: string;
+  country: string;
+  course: string;
 }
 
-const countriesData = [
+interface Country {
+  name: string;
+  courses: string[];
+}
+
+const countriesData: Country[] = [
   {
     name: "United States",
     courses: [
@@ -60,12 +65,13 @@ const countriesData = [
 ];
 
 export default function InternationalAdmissions() {
-  const [application, setApplication] = useState<StudentApplication>({
-    country: "",
-    course: "",
+  const router = useRouter();
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
-    phoneNumber: "",
+    phone: "",
+    country: "",
+    course: "",
   });
 
   const [availableCourses, setAvailableCourses] = useState<string[]>([]);
@@ -74,7 +80,7 @@ export default function InternationalAdmissions() {
     const selectedCountry = e.target.value;
     const countryData = countriesData.find((c) => c.name === selectedCountry);
 
-    setApplication((prev) => ({
+    setFormData((prev) => ({
       ...prev,
       country: selectedCountry,
       course: "", // Reset course when country changes
@@ -83,21 +89,17 @@ export default function InternationalAdmissions() {
     setAvailableCourses(countryData ? countryData.courses : []);
   };
 
-  const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
-  ) => {
-    const { name, value } = e.target;
-    setApplication((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add submission logic
-    console.log("Application Submitted:", application);
-    alert("Application Received! We will contact you soon.");
+    const queryParams = new URLSearchParams({
+      country: formData.country,
+      course: formData.course,
+    }).toString();
+    router.push(`/intmentor?${queryParams}`);
   };
 
   return (
@@ -132,7 +134,7 @@ export default function InternationalAdmissions() {
                       type="radio"
                       name="country"
                       value={country.name}
-                      checked={application.country === country.name}
+                      checked={formData.country === country.name}
                       onChange={handleCountryChange}
                       className="text-emerald-500 focus:ring-emerald-500"
                       required
@@ -152,7 +154,7 @@ export default function InternationalAdmissions() {
               </div>
             </div>
 
-            {application.country && (
+            {formData.country && (
               <div className="space-y-4">
                 <label className="block text-emerald-300 text-lg font-medium">
                   Select Course
@@ -164,8 +166,8 @@ export default function InternationalAdmissions() {
                         type="radio"
                         name="course"
                         value={course}
-                        checked={application.course === course}
-                        onChange={handleInputChange}
+                        checked={formData.course === course}
+                        onChange={handleChange}
                         className="text-emerald-500 focus:ring-emerald-500"
                         required
                       />
@@ -181,32 +183,20 @@ export default function InternationalAdmissions() {
               <input
                 type="text"
                 name="name"
-                value={application.name}
-                onChange={handleInputChange}
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
                 required
               />
             </div>
 
-            {/* <div className="space-y-2">
-              <label className="block text-emerald-300">Email Address</label>
-              <input
-                type="email"
-                name="email"
-                value={application.email}
-                onChange={handleInputChange}
-                className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
-                required
-              />
-            </div> */}
-
             <div className="space-y-2">
               <label className="block text-emerald-300">Phone Number</label>
               <input
                 type="tel"
-                name="phoneNumber"
-                value={application.phoneNumber}
-                onChange={handleInputChange}
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 className="w-full bg-gray-800 text-emerald-300 border-emerald-700 border rounded p-2"
                 required
               />
