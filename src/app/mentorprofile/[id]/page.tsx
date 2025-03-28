@@ -438,9 +438,11 @@ const MentorProfile = () => {
               </CardContent>
 
               <CardFooter className="bg-gradient-to-b from-gray-900 to-black rounded-b-xl pt-2">
-                <Button className="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium shadow-md hover:shadow-lg transition-all">
-                  Schedule a Session
-                </Button>
+                <Link href="/session">
+                  <div className="w-full block text-center bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium shadow-md hover:shadow-lg transition-all py-2 rounded-lg">
+                    Schedule a Session
+                  </div>
+                </Link>
               </CardFooter>
             </Card>
           </div>
@@ -482,9 +484,11 @@ const MentorProfile = () => {
                 </CardDescription>
               </CardHeader>
               <CardFooter className="flex flex-col sm:flex-row gap-3">
-                <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg">
-                  <Calendar className="mr-2 h-4 w-4" /> Schedule a Session
-                </Button>
+                <Link href="/session">
+                  <div className="w-full sm:w-auto flex items-center justify-center bg-green-600 hover:bg-green-700 text-black font-medium shadow-md hover:shadow-lg transition-all px-4 py-2 rounded-lg">
+                    <Calendar className="mr-2 h-4 w-4" /> Schedule a Session
+                  </div>
+                </Link>
                 <Link
                   href="/chat-app"
                   className="w-full sm:w-auto border border-green-500/30 text-green-400 hover:bg-green-900/30 hover:text-green-300 px-4 py-2 rounded-md flex items-center justify-center"
