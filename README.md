@@ -98,6 +98,8 @@ npm install @clerk/nextjs
 ```sh
 npm run dev
 ```
+### **Video Explaination**
+https://drive.google.com/file/d/1xyataAFVxw_z3WbFNVWtDVGfpsccXfGk/view?usp=sharing
 
 Now, visit `http://localhost:3000` to see the platform in action! 🚀
 

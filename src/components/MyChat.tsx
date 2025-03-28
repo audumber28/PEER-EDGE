@@ -10,13 +10,13 @@ import {
   Window,
 } from 'stream-chat-react';
 import 'stream-chat-react/dist/css/v2/index.css';
-import ServerList from './ServerList/ServerList';
-import CustomChannelList from './ChannelList/CustomChannelList';
-import CustomDateSeparator from './MessageList/CustomDateSeparator/CustomDateSeparator';
-import CustomChannelHeader from './MessageList/CustomChannelHeader/CustomChannelHeader';
-import CustomMessage from './MessageList/CustomMessage/CustomMessage';
-import { customReactionOptions } from './MessageList/CustomReactions/CustomReactionsSelector';
-import MessageComposer from './MessageList/MessageComposer/MessageComposer';
+import ServerList from '@/components/ServerList/ServerList';
+import CustomChannelList from '@/components/ChannelList/CustomChannelList';
+import CustomDateSeparator from '@/components/MessageList/CustomDateSeparator/CustomDateSeparator';
+import CustomChannelHeader from '@/components/MessageList/CustomChannelHeader/CustomChannelHeader';
+import CustomMessage from '@/components/MessageList/CustomMessage/CustomMessage';
+import { customReactionOptions } from '@/components/MessageList/CustomReactions/CustomReactionsSelector';
+import MessageComposer from '@/components/MessageList/MessageComposer/MessageComposer';
 
 export default function MyChat({
     apiKey,

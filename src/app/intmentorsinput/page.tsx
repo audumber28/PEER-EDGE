@@ -127,10 +127,7 @@ export default function InternationalAdmissions() {
               </label>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {countriesData.map((country) => (
-                  <div
-                    key={country.name}
-                    className="flex items-center space-x-2"
-                  >
+                  <div key={country.name} className="flex items-center">
                     <input
                       type="radio"
                       name="country"
@@ -140,14 +137,14 @@ export default function InternationalAdmissions() {
                       className="text-emerald-500 focus:ring-emerald-500"
                       required
                     />
-                    <label className="text-emerald-300 flex items-center gap-2">
+                    <label className="text-emerald-300 flex items-center gap-2 ml-1">
                       {country.name}
                       <img
                         src={`/flags/${country.name
                           .toLowerCase()
                           .replace(/\s+/g, "-")}.svg`}
                         alt={`${country.name} flag`}
-                        className="w-7 h-5 object-contain"
+                        className="w-6 h-4 object-contain"
                       />
                     </label>
                   </div>
