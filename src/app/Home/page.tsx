@@ -42,13 +42,6 @@ export default function HomePage() {
               Mentors
             </Link>
             <Link
-              href="/profile"
-              className="text-sm font-medium flex items-center gap-1 hover:text-primary"
-            >
-              <Users className="h-4 w-4" />
-              Profile
-            </Link>
-            <Link
               href="/intmentorsinput"
               className="text-sm font-medium flex items-center gap-1 hover:text-primary"
             >

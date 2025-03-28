@@ -41,20 +41,6 @@ export default function ChannelListBottomBar(): JSX.Element {
                     </span>
                 </p>
             </button>
-            <button
-                className={`w-7 h-7 p-1 flex items-center justify-center relative rounded-lg hover:bg-gray-300 transition-all duration-100 ease-in-out ${!micActive ? 'inactive-icon text-red-400' : 'text-gray-700'
-                    }`}
-                onClick={() => setMicActive((currentValue) => !currentValue)}
-            >
-                <Mic />
-            </button>
-            <button
-                className={`w-7 h-7 p-1 flex items-center justify-center relative rounded-lg hover:bg-gray-300 transition-all duration-100 ease-in-out ${!audioActive ? 'inactive-icon text-red-400' : 'text-gray-700'
-                    }`}
-                onClick={() => setAudioActive((currentValue) => !currentValue)}
-            >
-                <Speaker />
-            </button>
             <button className='w-7 h-7 p-1 flex items-center justify-center relative rounded-md hover:bg-gray-300 transition-all duration-100 ease-in-out text-gray-700'>
                 <Gear className='w-full h-full' />
             </button>

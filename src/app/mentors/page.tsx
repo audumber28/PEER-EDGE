@@ -337,7 +337,7 @@ export default function MentorsPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <ScrollArea className="h-[200px] rounded-md pr-4">
+              <ScrollArea className="h-[200px] rounded-md pr-10">
                 <div className="flex flex-wrap gap-2">
                   {allExpertiseAreas.map(expertise => (
                     <Badge
@@ -484,9 +484,9 @@ export default function MentorsPage() {
               </CardDescription>
             </CardHeader>
             <CardFooter className="flex justify-center pb-6">
-              <Button className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium px-6">
+              <Link href="/signin" className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-black font-medium px-6">
                 Get Started Now
-              </Button>
+              </Link>
             </CardFooter>
           </Card>
         </div>
