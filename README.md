@@ -31,8 +31,8 @@ By integrating **interest-driven guidance, mentor filtering, real-time course in
 
 ## **Team Members**
 
-| Name                | Email Address                 | Contribution |
-|---------------------|----------------|--------------------------------|-------------|
+| Name                | Email Address  | Contribution            |
+|---------------------|----------------|-------------------------|
 | **Conrad Alves**   | cleophus775@gmail.com         | Chat messaging section, real-time college course insights |
 | **Audumber Shirodkar**  | audumbershirodkar28@gmail.com | Sign-in page, student-mentor matching system based on interest selection |
 | **Shubh Solanki** | shubh01solanki@gmail.com       | Home page designing and page integrations |
