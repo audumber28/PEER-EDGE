@@ -33,14 +33,14 @@ By integrating **interest-driven guidance, mentor filtering, real-time course in
 
 | Name                | Contact Number  | Email Address                 | Contribution |
 |---------------------|----------------|--------------------------------|-------------|
-| **Conrad Alves**   | +91 82756 77785 | cleophus775@gmail.com         | Chat messaging section, real-time college course insights |
-| **Audumber Shirodkar** | +91 9096670957  | audumbershirodkar28@gmail.com | Sign-in page, student-mentor matching system based on interest selection |
-| **Shubh Solanki**  | +91 83299 74377 | shubh01solanki@gmail.com       | Home page designing and page integrations |
+| **Conrad Alves**   | cleophus775@gmail.com         | Chat messaging section, real-time college course insights |
+| **Audumber Shirodkar**  | audumbershirodkar28@gmail.com | Sign-in page, student-mentor matching system based on interest selection |
+| **Shubh Solanki** | shubh01solanki@gmail.com       | Home page designing and page integrations |
 
 ---
 
 ## **Tech Stack**
-- **Frontend**: Next.js, Tailwind CSS, ShadCN, HTML, Figma
+- **Frontend**: Next.js, Javascript , Typescript , Tailwind CSS, ShadCN, HTML, Figma
 - **Backend**: Node.js, Express.js, JWT Authentication
 - **Database & APIs**: Stream, Clerk Authentication
 - **Version Control**: Git, GitHub
